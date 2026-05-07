@@ -5,7 +5,7 @@
 */ -}}
 {{- $homeLab := .Site.Params.home.lab | default dict -}}
 {{- $githubUser := $homeLab.githubUser | default "gongzhujiejie" -}}
-{{- $githubRepo := $homeLab.githubRepo | default "lpppp.github.io" -}}
+{{- $githubRepo := $homeLab.githubRepo | default "gongzhujiejie.github.io" -}}
 {{- $outputBranch := $homeLab.outputBranch | default "output" -}}
 {{- $snakeLightRemote := printf "https://raw.githubusercontent.com/%s/%s/%s/github-contribution-grid-snake.svg" $githubUser $githubRepo $outputBranch -}}
 {{- $snakeDarkRemote := printf "https://raw.githubusercontent.com/%s/%s/%s/github-contribution-grid-snake-dark.svg" $githubUser $githubRepo $outputBranch -}}
