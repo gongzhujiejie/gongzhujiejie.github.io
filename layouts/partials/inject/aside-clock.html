@@ -1,0 +1,6 @@
+{{- /* 侧边栏 canvas 数字时钟 */ -}}
+<div class="aside-custom xb-aside-clock">
+  <canvas style="width:100%;" id="canvasTime">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+</div>
+{{- $canvasTime := resources.Get "js/canvasTime.js" | minify | fingerprint -}}
+<script defer src="{{ $canvasTime.RelPermalink }}" integrity="{{ $canvasTime.Data.Integrity }}"></script>

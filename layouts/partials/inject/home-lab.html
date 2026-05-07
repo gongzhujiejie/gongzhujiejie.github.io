@@ -1,0 +1,55 @@
+{{- /*
+  首页增强区。
+  作用：在 FixIt home profile 中插入 GitHub contribution snake、点阵时钟和可点击下滑箭头。
+  维护说明：GitHub snake 由 Platane/snk workflow 生成到 output 分支，开发环境使用本地占位 SVG。
+*/ -}}
+{{- $homeLab := .Site.Params.home.lab | default dict -}}
+{{- $githubUser := $homeLab.githubUser | default "gongzhujiejie" -}}
+{{- $githubRepo := $homeLab.githubRepo | default "lpppp.github.io" -}}
+{{- $outputBranch := $homeLab.outputBranch | default "output" -}}
+{{- $snakeLightRemote := printf "https://raw.githubusercontent.com/%s/%s/%s/github-contribution-grid-snake.svg" $githubUser $githubRepo $outputBranch -}}
+{{- $snakeDarkRemote := printf "https://raw.githubusercontent.com/%s/%s/%s/github-contribution-grid-snake-dark.svg" $githubUser $githubRepo $outputBranch -}}
+{{- $snakeLocal := "/images/github-contribution-grid-snake-placeholder.svg" | relURL -}}
+{{- $snakeLight := $snakeLocal -}}
+{{- $snakeDark := $snakeLocal -}}
+{{- if not hugo.IsServer -}}
+  {{- $snakeLight = $snakeLightRemote -}}
+  {{- $snakeDark = $snakeDarkRemote -}}
+{{- end -}}
+
+<section class="xb-home-lab" aria-label="GitHub contribution snake and dynamic clock">
+  <div class="xb-snake-card" aria-label="GitHub contribution snake for {{ $githubUser }}">
+    {{- /* 浅色主题 snake —— [theme='dark'] 时 CSS 隐藏 */ -}}
+    <img
+      class="xb-snake-img xb-snake-light"
+      src="{{ $snakeLight }}"
+      alt="GitHub contribution snake animation for {{ $githubUser }}"
+      loading="lazy"
+      decoding="async"
+      width="1200"
+      height="220">
+    {{- /* 深色主题 snake —— 默认隐藏，[theme='dark'] 时 CSS 显示 */ -}}
+    <img
+      class="xb-snake-img xb-snake-dark"
+      src="{{ $snakeDark }}"
+      alt="GitHub contribution snake animation (dark) for {{ $githubUser }}"
+      loading="lazy"
+      decoding="async"
+      width="1200"
+      height="220">
+    <p class="xb-snake-fallback">GitHub contribution snake loads after the workflow generates SVG on the output branch.</p>
+  </div>
+
+  <div class="xb-clock-shell" aria-label="Dynamic local time">
+    <canvas id="xb-canvas-clock" class="xb-canvas-clock" width="1088" height="170" aria-hidden="true"></canvas>
+    <div id="xb-cyber-clock" class="xb-cyber-clock" role="timer" aria-live="polite">
+      <span class="xb-cyber-clock__label">LOCAL TIME</span>
+      <strong class="xb-cyber-clock__time">--:--:--</strong>
+      <span class="xb-cyber-clock__date">booting...</span>
+    </div>
+  </div>
+
+  <button class="xb-scroll-hint" type="button" aria-label="滚动到文章列表">
+    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+  </button>
+</section>

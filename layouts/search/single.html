@@ -1,0 +1,35 @@
+{{- define "title" -}}
+  {{- .Title }} - {{ .Site.Title -}}
+{{- end -}}
+
+{{- define "content" -}}
+<article class="page single xb-pagefind-page" data-pagefind-ignore="all">
+  <header class="header">
+    <h1 class="single-title">{{ .Title }}</h1>
+    {{- with .Params.subtitle }}<p class="single-subtitle">{{ . }}</p>{{ end -}}
+  </header>
+  <div class="content xb-pagefind-content">
+    <p class="xb-pagefind-hint">输入关键词搜索文章、CTF、Web、Pwn、Crypto、Misc 笔记。</p>
+    <div id="xb-pagefind-search"></div>
+    <noscript>搜索需要启用 JavaScript。</noscript>
+  </div>
+</article>
+<link href="{{ "pagefind/pagefind-ui.css" | relURL }}" rel="stylesheet">
+<script src="{{ "pagefind/pagefind-ui.js" | relURL }}" defer></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    if (!window.PagefindUI) return;
+    new PagefindUI({
+      element: '#xb-pagefind-search',
+      showSubResults: true,
+      showImages: false,
+      excerptLength: 24,
+      translations: {
+        placeholder: '搜索文章 / CTF / Web / Pwn / Crypto / Misc',
+        zero_results: '没有找到匹配结果',
+        clear_search: '清空搜索'
+      }
+    });
+  });
+</script>
+{{- end -}}

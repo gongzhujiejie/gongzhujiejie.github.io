@@ -3,7 +3,8 @@
   "baseUrl": ".",
   "paths": {
    "*": [
-    "../../FixIt/assets/*"
+    "..\\_vendor\\github.com\\hugo-fixit\\FixIt\\assets\\*",
+    "..\\_vendor\\github.com\\hugo-fixit\\cmpt-translate\\assets\\*"
    ]
   }
  }

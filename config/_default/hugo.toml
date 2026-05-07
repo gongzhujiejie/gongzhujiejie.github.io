@@ -3,14 +3,16 @@
 # See: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-title = "my-blog"
-baseURL = "https://example.org/"
+title = "lpppp"
+baseURL = "https://lpppp.github.io/"
 # theme = "FixIt"
-defaultContentLanguage = "en"
-languageCode = "en"
+defaultContentLanguage = "zh-cn"
+locale = "zh-CN"
+languageName = "Chinese"
 hasCJKLanguage = true
 enableRobotsTXT = true
 enableEmoji = true
+mainSections = ["posts"]
 enableGitInfo = true
 relativeURLs = false
 buildDrafts = false
@@ -22,3 +24,8 @@ ignoreLogs = [
   "error-remote-getjson",
   "error-missing-instagram-accesstoken"
 ]
+
+[params]
+  version = "0.3.X"
+  description = "成功不是一种偶然，而是一种习惯。"
+  keywords = ["Hugo", "FixIt"]

@@ -6,3 +6,9 @@ resources/
 .hugo_build.lock
 _vendor
 jsconfig.json
+
+# 旧配置备份 / 无用文件
+hugo.old.toml
+hugo.toml
+theme.toml
+docs/

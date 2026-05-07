@@ -4,20 +4,26 @@
 # -------------------------------------------------------------------------------------
 
 # FixIt 0.2.15 | CHANGED FixIt theme version
+# FixIt 主题版本
 version = "0.3.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
 # site description
-description = "This is my new Hugo FixIt site"
+# 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards
+description = "成功不是一种偶然，而是一种习惯。"
 # site keywords
-keywords = ["Hugo", "FixIt"]
+# 网站关键词
+keywords = ["Hugo", "FixIt", "lpppp","博客", "ctf"]
 # site default theme ["light", "dark", "auto"]
+# site default theme ["light", "dark", "auto"]
+# 网站默认主题 ["light", "dark", "auto"]
 defaultTheme = "auto"
 # which hash function used for SRI, when empty, no SRI is used
 # ["sha256", "sha384", "sha512", "md5"]
 fingerprint = ""
 # NEW date format
+# date format
 dateFormat = "2006-01-02"
 # website images for Open Graph and Twitter Cards
-images = []
+images = ["/images/avatar.png"]
 # FixIt 0.2.12 | NEW enable PWA
 enablePWA = false
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
@@ -26,6 +32,8 @@ externalIcon = false
 capitalizeTitles = true
 # FixIt 0.3.0 | NEW whether to add site title to the title of every page
 # remember to set up your site title in `hugo.toml` (e.g. title = "title")
+# 是否在每个页面标题中添加网站标题
+# 请在 `hugo.toml` 中设置网站标题 (e.g. title = "title")
 withSiteTitle = true
 # FixIt 0.3.0 | NEW title delimiter when the site title is be added to the title of every page
 titleDelimiter = "-"
@@ -33,17 +41,18 @@ titleDelimiter = "-"
 # remember to set up your site subtitle by `params.header.subtitle.name`
 indexWithSubtitle = false
 # FixIt 0.3.13 | NEW whether to show summary in plain text
-summaryPlainify = false
+summaryPlainify = true
 # FixIt 0.2.14 | NEW FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
 # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
 disableThemeInject = false
 
-# Author Configuration
+# 作者配置
 [author]
-  name = "Lruihao"
-  email = "1024@lruihao.cn"
-  link = "https://github.com/Lruihao"
-  avatar = ""
+  # 标题名称
+  name = "lpppp"
+  email = "1171498928@qq.com"
+  link = "/"
+  avatar = "/images/avatar.png"
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
 [gitInfo]
@@ -59,11 +68,11 @@ disableThemeInject = false
 # App icon config
 [app]
   # optional site title override for the app when added to an iOS home screen or Android launcher
-  title = "Hugo FixIt Blog"
+  title = "lpppp"
   # whether to omit favicon resource links
   noFavicon = false
   # modern SVG favicon to use in place of older style .png and .ico files
-  svgFavicon = ""
+  svgFavicon = "/images/favicon.svg"
   # Safari mask icon color
   iconColor = "#5bbad5"
   # Windows v8-10 tile color
@@ -75,21 +84,22 @@ disableThemeInject = false
 
 # Search config
 [search]
-  enable = true
+  enable = false
   # type of search engine ["algolia", "fuse"]
-  type = "fuse"
+  type = "cse"
   # max index length of the chunked content
-  contentLength = 4000
+  contentLength = 8000
   # placeholder of the search bar
-  placeholder = ""
+  placeholder = "搜 CTF / Web / Pwn / Crypto / Misc"
   # max number of results length
-  maxResultLength = 10
+  maxResultLength = 12
   # snippet length of the result
-  snippetLength = 30
+  snippetLength = 60
   # HTML tag name of the highlight part in results
   highlightTag = "em"
   # whether to use the absolute URL based on the baseURL in search index
   absoluteURL = false
+  anchorify = true
   [search.algolia]
     index = ""
     appID = ""
@@ -100,12 +110,21 @@ disableThemeInject = false
     minMatchCharLength = 2
     findAllMatches = false
     location = 0
-    threshold = 0.3
-    distance = 100
-    ignoreLocation = false
+    threshold = 0.25
+    distance = 200
+    ignoreLocation = true
     useExtendedSearch = false
     ignoreFieldNorm = false
 
+
+# FixIt 0.3.16 | NEW Custom Search Engine (CSE)
+# 如需 Google Programmable Search Engine，将 engine 改为 "google" 并填入 cse.google.cx。
+[cse]
+  engine = "google"
+  resultsPage = "/search/"
+  [cse.google]
+    cx = "REPLACE_WITH_GOOGLE_CSE_CX"
+  [cse.bing]
 # Header config
 [header]
   # FixIt 0.2.13 | CHANGED desktop header mode ["sticky", "normal", "auto"]
@@ -115,15 +134,16 @@ disableThemeInject = false
   # Header title config
   [header.title]
     # URL of the LOGO
-    logo = "/images/fixit.min.svg"
+    # LOGO 的 URL 网页左上角logo图标配置
+    logo = "/images/avatar.png"
     # title name
-    name = ""
+    name = "lpppp"
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
     # whether to use typeit animation for title name
-    typeit = false
+    typeit = true
   # FixIt 0.2.12 | NEW Header subtitle config
   [header.subtitle]
     # subtitle name
@@ -224,8 +244,9 @@ disableThemeInject = false
   maxCount = 10
 
 # FixIt 0.2.17 | NEW TagCloud config for tags page
+# 标签云配置
 [tagcloud]
-  enable = false
+  enable = true
   min = 14 # Minimum font size in px
   max = 32 # Maximum font size in px
   peakCount = 10 # Maximum count of posts per tag
@@ -234,31 +255,45 @@ disableThemeInject = false
 # Home page config
 [home]
   # Home page profile
+  # 主页个人信息
   [home.profile]
     enable = true
     # Gravatar Email for preferred avatar in home page
-    gravatarEmail = "xx@xx.com"
+    # Gravatar 邮箱，用于优先在主页显示的头像
+    gravatarEmail = ""
     # URL of avatar shown in home page
-    avatarURL = ""
+    # 主页显示头像的 URL
+    avatarURL = "/images/avatar.png"
     # FixIt 0.2.17 | NEW identifier of avatar menu link
+    # FixIt 0.2.7 | 更改 主页显示的网站标题（支持 HTML 格式）
     avatarMenu = ""
     # title shown in home page (HTML format is supported)
-    title = ""
+    # 主页显示的网站副标题
+    title = "Success is not accidental, but has always been a habit."
     # subtitle shown in home page (HTML format is supported)
-    subtitle = "This is my new Hugo FixIt site"
+    subtitle = "成功不是一种偶然，而是一种习惯。"
     # whether to use typeit animation for subtitle
+    # 是否为副标题显示打字机动画
     typeit = true
     # whether to show social links
+    # 是否显示社交账号
     social = true
     # disclaimer (HTML format is supported)
+    # FixIt 0.2.0 | 新增 免责声明（支持 HTML 格式）
     disclaimer = ""
   # Home page posts
+  # 主页文章列表
   [home.posts]
     enable = true
     # special amount of posts in each home posts page
-    paginate = 6
+    paginate = 12
+  [home.lab]
+    githubUser = "gongzhujiejie"
+    githubRepo = "lpppp.github.io"
+    outputBranch = "output"
 
 # FixIt 0.2.16 | CHANGED Social config about the author
+# 主页的社交信息设置
 [social]
   GitHub = ""
   Linkedin = ""
@@ -347,7 +382,7 @@ disableThemeInject = false
   Credly = ""
   Phone = ""
   Email = ""
-  RSS = true
+  RSS = false
   # custom social links like the following
   # [social.twitter]
   #   id = "lruihao"
@@ -358,21 +393,29 @@ disableThemeInject = false
   #     class = "fa-brands fa-x-twitter fa-fw"
 
 # TypeIt config
+# TypeIt 配置
 [typeit]
   # typing speed between each step (measured in milliseconds)
+  # 每一步的打字速度 (单位是毫秒)
   speed = 100
   # blinking speed of the cursor (measured in milliseconds)
+  # 光标的闪烁速度 (单位是毫秒)
   cursorSpeed = 1000
   # character used for the cursor (HTML format is supported)
+  # 光标的字符 (支持 HTML 格式)
   cursorChar = "|"
   # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+  # 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
   duration = -1
   # FixIt 0.2.18 | NEW whether your strings will continuously loop after completing
+  # 是否启用循环打字特效
   loop = false
 
 # FixIt 0.2.15 | NEW Mermaid config
+# Mermaid 配置 since v0.2.15
 [mermaid]
   # For values, see https://mermaid.js.org/config/theming.html#available-themes
+  # 取值详见 https://mermaid-js.github.io/mermaid/#/Setup?id=theme
   themes = ["default", "dark"]
 
 # FixIt 0.3.13 | NEW Admonitions custom config
@@ -397,6 +440,7 @@ disableThemeInject = false
 # FixIt 0.2.12 | NEW PanguJS config
 [pangu]
   # For Chinese writing
+  # 适用于中文写作用户
   enable = false
   selector = "article" # FixIt 0.2.17 | NEW
 
@@ -426,11 +470,11 @@ disableThemeInject = false
 # FixIt 0.3.10 | NEW Busuanzi count
 [busuanzi]
   # whether to enable busuanzi count
-  enable = false
+  enable = true
   # busuanzi count core script source. Default is https://vercount.one/js
   source = "https://vercount.one/js"
   # whether to show the site views
-  siteViews = true
+  siteViews = false
   # whether to show the page views
   pageViews = true
 
@@ -467,7 +511,7 @@ disableThemeInject = false
 
 # Cookie consent config
 [cookieconsent]
-  enable = true
+  enable = false
   # text strings used for Cookie consent banner
   [cookieconsent.content]
     message = ""
@@ -479,16 +523,20 @@ disableThemeInject = false
   # CDN data file name, disabled by default ["jsdelivr.yml", "unpkg.yml", ...]
   # located in "themes/FixIt/assets/data/cdn/" directory
   # you can store your own data files in the same path under your project: "assets/data/cdn/"
-  data = ""
+  data = "jsdelivr.yml"
 
 # Compatibility config
+# 兼容性设置
 [compatibility]
   # whether to use Polyfill.io to be compatible with older browsers
+  # 是否使用 Polyfill.io 来兼容旧式浏览器
   polyfill = false
   # whether to use object-fit-images to be compatible with older browsers
+  # 是否使用 object-fit-images 来兼容旧式浏览器
   objectFit = false
 
 # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
+# 在左上角或者右上角显示 GitHub 开源链接 since v0.2.14
 [githubCorner]
   enable = false
   permalink = "https://github.com/hugo-fixit/FixIt"
@@ -496,42 +544,84 @@ disableThemeInject = false
   position = "right" # ["left", "right"]
 
 # FixIt 0.2.14 | NEW Gravatar config
+# Gravatar 设置 since v0.2.14
 [gravatar]
   # FixIt 0.2.18 | NEW Depends on the author's email, if the author's email is not set, the local avatar will be used
-  enable = true
+  enable = false
   # Gravatar host, default: "www.gravatar.com"
+  # Gravatar 主机，默认：“www.gravatar.com”
   host = "www.gravatar.com" # ["cravatar.cn", "gravatar.loli.net", ...]
   style = "" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
 
 # FixIt 0.2.16 | NEW Back to top
+# 返回顶部
 [backToTop]
   enable = true
   # Scroll percent label in b2t button
-  scrollpercent = false
+  # 在 b2t 按钮中显示滚动百分比
+  scrollpercent = true
 
 # FixIt 0.2.16 | NEW Reading progress bar
+# 阅读进度条
 [readingProgress]
-  enable = false
+  enable = true
   # Available values: ["left", "right"]
+  # 可用值：["left", "right"]
   start = "left"
   # Available values: ["top", "bottom"]
+  # 可用值：["top", "bottom"]
   position = "top"
   reversed = false
-  light = ""
-  dark = ""
+  light = "#0076ff"
+  dark = "#fff"
   height = "2px"
 
 # FixIt 0.2.17 | NEW Progress bar in the top during page loading.
 # For more information: https://github.com/CodeByZach/pace
+# FixIt 0.2.17 | 新增 页面加载期间顶部的进度条
+# 有关详细信息：https://github.com/CodeByZach/pace
 [pace]
   enable = false
   # All available colors:
+  # 所有可用颜色：
   # ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
   color = "blue"
   # All available themes:
+  # 所有可用主题：
   # ["barber-shop", "big-counter", "bounce", "center-atom", "center-circle", "center-radar", "center-simple",
   # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
-  theme = "minimal"
+  theme = "loading-bar"
+
+
+# FixIt 0.4.0 | NEW Code block wrapper config
+# 代码块包装配置。FixIt 0.4.x 使用 params.codeblock，而不是旧版 params.page.code。
+# 目标样式：仿 https://fixit.lruihao.cn/ 文档代码块 —— 带完整 header（标题、行号切换、
+# 自动换行切换、复制、下载、全屏、编辑），超过一定行数自动折叠。
+[codeblock]
+  # 是否启用代码块包装（标题栏、复制按钮等都依赖它）
+  wrapper = true
+  # 代码块风格：classic / mac / simple（只有 classic 会渲染完整 header）
+  mode = "classic"
+  # 追加到 .code-block.highlight 外层的额外 class，留空即可
+  wrapperClass = ""
+  # 默认展示的代码行数；超过该值时头部出现"展开 / 收起"按钮，等价"隐藏部分代码"
+  # 设为 0 表示永不折叠，设为较小的值如 20 表示超过 20 行自动折叠只露前 20 行
+  maxShownLines = 20
+  # 代码块阴影策略：never / hover / always，hover 时最接近 FixIt 官方文档
+  shadow = "hover"
+  # 是否显示复制按钮
+  copyable = true
+  # 是否显示下载按钮（把当前 code block 另存为文件）
+  downloadable = true
+  # 是否显示全屏按钮
+  fullscreen = true
+  # 是否显示"切换行号"按钮
+  lineNosToggler = true
+  # 是否显示"切换自动换行"按钮
+  lineWrapToggler = true
+  # 是否显示编辑按钮（实验特性，点了之后可以就地改 code）
+  editable = true
+
 
 # FixIt 0.3.10 | NEW Global Feed config for RSS, Atom and JSON feed.
 [feed]
@@ -547,18 +637,83 @@ disableThemeInject = false
 # FixIt 0.3.12 | NEW Custom partials config
 # Custom partials must be stored in the /layouts/partials/ directory.
 # Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
+# 定义自定义文件路径
+# 在站点目录 `layouts/partials/custom` 中创建您的自定义文件，并取消注释下面需要的文件
 [customPartials]
   head = [
     "inject/fixit-docs-bookmark.html",
   ]
-  profile = []
-  aside = []
+  profile = [
+    "inject/home-lab.html",
+  ]
+  aside = [
+    "inject/aside-clock.html",
+  ]
   comment = []
+  # 桌面端 / 移动端头部菜单注入翻译切换器（由 cmpt-translate 提供）
+  menuDesktop = [
+    "inject/translate-menu-desktop.html",
+  ]
+  menuMobile = [
+    "inject/translate-menu-mobile.html",
+  ]
   footer = []
   widgets = []
-  assets = []
+  assets = [
+    "inject/pagefind-modal.html",
+    # cmpt-translate 注入 translate.js 与初始化脚本
+    "inject/cmpt-translate.html",
+  ]
   postFooterBefore = []
   postFooterAfter = []
+
+# FixIt cmpt-translate 自动翻译配置
+# 官方文档：https://github.com/hugo-fixit/cmpt-translate
+[autoTranslate]
+  # 是否启用（必须为 true 才会初始化 translate.js）
+  enable = true
+  # 翻译服务，可选 "client.edge"（Edge 免费通道，默认）/ "translate.service"（官方通道）
+  service = "client.edge"
+  # 目标语言列表，留空则使用 translate.js 默认全量。这里显式列出常见几种。
+  # 完整可选值见：https://api.translate.zvo.cn/doc/translate.service.executeByLocalLanguage.json.html
+  languages = [
+    "chinese_simplified",
+    "english",
+    "japanese",
+    "korean",
+    "french",
+    "spanish",
+    "russian",
+    "german",
+  ]
+  # 忽略翻译的元素 ID（如评论容器、终端动画等）
+  ignoreID = []
+  # 忽略翻译的 class（保留代码块、数学公式、mermaid、自定义终端等不被误翻）
+  ignoreClass = [
+    "highlight",
+    "chroma",
+    "katex",
+    "mermaid",
+    "xv-about-v3-terminal",
+  ]
+  # 忽略翻译的标签
+  ignoreTag = [
+    "code",
+    "pre",
+  ]
+  # 永远保持原样、不翻译的文本（品牌名、专有名词等）
+  ignoreText = [
+    "FixIt",
+    "Hugo",
+    "lpppp",
+    "CTF",
+  ]
+  # 是否根据浏览器语言自动判断本地语言（此处关闭，默认以中文为本地语言）
+  detectLocalLanguage = false
+  # translate.js CDN 地址；留空则使用组件内置 CDN
+  cdn = ""
+  # 是否启用企业级通道（需要自备 token）
+  enterprise = false
 
 # FixIt 0.2.15 | NEW Developer options
 # Select the scope named `public_repo` to generate personal access token,
@@ -569,6 +724,7 @@ disableThemeInject = false
   c4u = false
 
 # Page config
+# 文章页面配置
 [page]
   # FixIt 0.2.18 | NEW whether to enable the author's avatar of the post
   authorAvatar = true
@@ -583,9 +739,7 @@ disableThemeInject = false
   # whether to enable twemoji
   twemoji = false
   # FixIt 0.2.18 | CHANGED whether to enable lightgallery
-  # set to true, images in the content will be shown as the gallery if the image has a title, e.g. ![alt](src "title")
-  # set to "force", images in the content will be forced to shown as the gallery regardless of the image has a title or not, e.g. ![alt](src)
-  lightgallery = false
+  lightgallery = true
   # whether to enable the ruby extended syntax
   ruby = true
   # whether to enable the fraction extended syntax
@@ -603,18 +757,17 @@ disableThemeInject = false
   # FixIt 0.3.0 | NEW whether to show link to report issue for the post
   linkToReport = true
   # FixIt 0.3.10 | CHANGED Page style ["narrow", "normal", "wide", ...]
-  pageStyle = "normal"
+  pageStyle = "wide"
   # FixIt 0.2.17 | CHANGED Auto Bookmark Support
-  # If true, save the reading progress when closing the page.
-  autoBookmark = false
+  autoBookmark = true
   # FixIt 0.2.17 | NEW whether to enable wordCount
   wordCount = true
   # FixIt 0.2.17 | NEW whether to enable readingTime
   readingTime = true
   # FixIt 0.2.17 | NEW end of post flag
-  endFlag = ""
+  endFlag = "-----（完）-----"
   # FixIt 0.2.18 | NEW whether to enable instant.page
-  instantPage = false
+  instantPage = true
   # FixIt 0.3.0 | NEW whether to enable collection list at the sidebar
   collectionList = true
   # FixIt 0.3.0 | NEW whether to enable collection navigation at the end of the post
@@ -631,7 +784,7 @@ disableThemeInject = false
     # whether to keep the static table of the contents in front of the post
     keepStatic = false
     # whether to make the table of the contents in the sidebar automatically collapsed
-    auto = true
+    auto = false
     # FixIt 0.2.13 | NEW position of TOC ["left", "right"]
     position = "right"
     # FixIt 0.3.12 | NEW supersede `markup.tableOfContents` settings
@@ -664,29 +817,31 @@ disableThemeInject = false
         h4 = "{h2}.{h3}.{h4} {title}"
         h5 = "{h2}.{h3}.{h4}.{h5} {title}"
         h6 = "{h2}.{h3}.{h4}.{h5}.{h6} {title}"
-  # FixIt 0.2.16 | CHANGED KaTeX mathematical formulas (https://katex.org)
+  # FixIt 0.4.0 | CHANGED mathematical formulas configuration
+  # 数学公式配置：这里使用 MathJax，配合 config/_default/markup.toml 的 passthrough 扩展。
+  # 文章内使用 math: true 后，$...$ 和 $$...$$ 会交给 MathJax 渲染。
   [page.math]
     enable = true
-    # default inline delimiter is $ ... $ and \( ... \)
-    inlineLeftDelimiter = ""
-    inlineRightDelimiter = ""
-    # default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
-    blockLeftDelimiter = ""
-    blockRightDelimiter = ""
-    # KaTeX extension copy_tex
-    copyTex = true
-    # KaTeX extension mhchem
-    mhchem = true
-  # Code wrapper config
-  [page.code]
-    # FixIt 0.3.9 | NEW whether to enable the code wrapper
-    enable = true
-    # whether to show the copy button of the code wrapper
-    copy = true
-    # FixIt 0.2.13 | NEW whether to show the edit button of the code wrapper
-    edit = true
-    # the maximum number of lines of displayed code by default
-    maxShownLines = 10
+    # 可选："katex" 渲染更快；"mathjax" TeX 兼容性更好。
+    type = "mathjax"
+
+    # KaTeX 备用配置；如果以后把 type 改回 "katex"，这里会生效。
+    [page.math.katex]
+      copyTex = true
+      throwOnError = false
+      errorColor = "#ff4949"
+
+    # MathJax 配置；使用官方 CDN 版本，兼容更多 TeX 语法。
+    [page.math.mathjax]
+      cdn = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+      [page.math.mathjax.loader]
+        load = ["ui/safe"]
+      [page.math.mathjax.options]
+        enableMenu = true
+        # 不在代码块等元素里扫描公式，避免误伤代码示例。
+        skipHtmlTags = ["script", "noscript", "style", "textarea", "pre", "code", "math", "select", "option", "mjx-container"]
+        ignoreHtmlClass = "mathjax_ignore"
+
   # Mapbox GL JS config (https://docs.mapbox.com/mapbox-gl-js)
   [page.mapbox]
     # access token of Mapbox GL JS
@@ -710,7 +865,7 @@ disableThemeInject = false
     replace = false
   # FixIt 0.3.0 | NEW Related content config (https://gohugo.io/content-management/related/)
   [page.related]
-    enable = false
+    enable = true
     count = 5
   # FixIt 0.2.17 | NEW Donate (Sponsor) settings
   [page.reward]
@@ -907,11 +1062,12 @@ disableThemeInject = false
       # located in "assets/"
       # Or
       # someJavascript = "https://cdn.example.com/some.js"
+      flyfish = "js/flyfish.js"
   # Page SEO config
   [page.seo]
     # image URL
-    images = []
+    images = ["/images/avatar.png"]
     # Publisher info
     [page.seo.publisher]
       name = ""
-      logoUrl = ""
+      logoUrl = "/images/avatar.png"

@@ -3,8 +3,8 @@
 # See: https://gohugo.io/content-management/related/
 # -------------------------------------------------------------------------------------
 
-includeNewer = false
-threshold = 80
+includeNewer = true
+threshold = 40
 toLower = false
 
 [[indices]]

@@ -8,6 +8,7 @@ on:
       - 'config/**'
       - 'content/**'
       - 'data/**'
+      - 'layouts/**'
       - 'static/**'
       - 'themes/**'
       - 'go.mod'

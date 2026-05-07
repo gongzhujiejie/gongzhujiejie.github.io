@@ -24,6 +24,13 @@
     table = true
     taskList = true
     typographer = true
+    # FixIt 0.4.x 数学公式渲染依赖 Goldmark passthrough 扩展。
+    # 这里让 $...$、$$...$$、\(...\)、\[...\] 进入主题的 render-passthrough.html。
+    [goldmark.extensions.passthrough]
+      enable = true
+      [goldmark.extensions.passthrough.delimiters]
+        block = [['$$', '$$'], ['\\[', '\\]']]
+        inline = [['$', '$'], ['\\(', '\\)']]
   [goldmark.parser]
     autoHeadingID = true
     autoHeadingIDType = "github"

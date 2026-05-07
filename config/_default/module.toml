@@ -7,6 +7,10 @@
   path = "github.com/hugo-fixit/FixIt"
 [[imports]]
   path = "github.com/hugo-fixit/shortcode-docs-bookmark"
+# FixIt 多语言自动翻译组件：基于 translate.js，无需 API Key、SEO 友好。
+# 仓库：https://github.com/hugo-fixit/cmpt-translate
+[[imports]]
+  path = "github.com/hugo-fixit/cmpt-translate"
 
 [hugoVersion]
   extended = true

@@ -1,6 +1,14 @@
 # -------------------------------------------------------------------------------------
 # Customizing Output Formats
 # See: https://gohugo.io/templates/output-formats/#customizing-output-formats
+# FixIt outputs reference: https://fixit.lruihao.cn/documentation/advanced/#outputs
 # -------------------------------------------------------------------------------------
 
 _merge = "shadow"
+
+# FixIt 主题会内置 archives / offline / search / markdown 输出格式定义；这里只补齐页面类型映射。
+home = ["html", "rss", "archives", "offline", "search"]
+page = ["html", "markdown"]
+section = ["html", "rss"]
+taxonomy = ["html"]
+term = ["html", "rss"]
