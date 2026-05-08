@@ -14,18 +14,10 @@
   'use strict';
 
   // ============== 常量定义 ==============
-  // NOTE: Pagefind 资源默认发布到站点根 /pagefind 目录
-  // 通过 document.baseURI 解析，兼容 GitHub Pages 等带子路径部署
-  function resolveAsset(rel) {
-    try {
-      return new URL(rel, document.baseURI).toString();
-    } catch (err) {
-      return rel;
-    }
-  }
-
-  var PAGEFIND_CSS = resolveAsset('pagefind/pagefind-ui.css');
-  var PAGEFIND_JS = resolveAsset('pagefind/pagefind-ui.js');
+  // NOTE: Pagefind 资源发布在站点根 /pagefind 目录
+  // 使用绝对路径，避免子页面（如 /about/）拼出错误的相对路径
+  var PAGEFIND_CSS = '/pagefind/pagefind-ui.css';
+  var PAGEFIND_JS = '/pagefind/pagefind-ui.js';
 
   // 关键元素 id，统一集中便于维护
   var TRIGGER_ID = 'xb-pagefind-trigger';
