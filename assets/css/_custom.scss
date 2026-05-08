@@ -1677,10 +1677,22 @@ body.xb-pagefind-locked {
   border-top: 1px dashed var(--v3-border, rgba(128, 128, 128, .35));
   font-size: .85rem;
   color: var(--v3-muted, #888);
-  text-align: center;
+  text-align: left;
   line-height: 1.7;
 
-  p { margin: 0; }
+  p { margin: 0 0 .5rem; }
+
+  b { color: var(--v3-ink, inherit); }
+
+  ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    list-style: disc;
+  }
+
+  li {
+    margin-bottom: .3rem;
+  }
 
   a {
     color: var(--v3-ink, inherit);

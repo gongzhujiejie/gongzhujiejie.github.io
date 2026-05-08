@@ -62,11 +62,11 @@ hiddenFromHomePage: true
   </section>
 
   <section class="xv-about-credit" aria-label="design credit">
-    <p>
-      本页面大量美化与交互设计灵感，参考并模仿自
-      <a href="https://geekswg.js.coo" target="_blank" rel="noopener noreferrer">geekswg.js.coo</a>
-      ，在此向原作者致谢。
-    </p>
+    <p><b>声明</b></p>
+    <ul>
+      <li>本页面大量美化与交互设计灵感，参考并模仿自 <a href="https://geekswg.js.cool" target="_blank" rel="noopener noreferrer">geekswg.js.cool</a>，在此向原作者致谢。</li>
+      <li>终端效果灵感来自 <a href="https://maze-sec.com/" target="_blank" rel="noopener noreferrer">maze-sec.com</a>，但自己随便搞的很简陋。</li>
+    </ul>
   </section>
 
 </div>
