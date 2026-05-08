@@ -289,7 +289,7 @@ disableThemeInject = false
     paginate = 12
   [home.lab]
     githubUser = "gongzhujiejie"
-    githubRepo = "lpppp.github.io"
+    githubRepo = "gongzhujiejie.github.io"
     outputBranch = "output"
 
 # FixIt 0.2.16 | CHANGED Social config about the author
