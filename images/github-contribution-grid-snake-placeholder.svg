@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" role="img" aria-label="GitHub contribution snake preview placeholder">
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff7aa8"/>
+      <stop offset="50%" stop-color="#7c5cff"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(60,30)" opacity="0.85">
+    <g transform="translate(0,10)">
+      <rect width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="18" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="36" width="14" height="14" rx="3" fill="#ffc4da"/>
+      <rect x="54" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="72" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="90" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="108" width="14" height="14" rx="3" fill="#a78bfa"/>
+      <rect x="126" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="144" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="162" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="180" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="198" width="14" height="14" rx="3" fill="#38bdf8"/>
+      <rect x="216" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="234" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="252" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="270" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="288" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="306" width="14" height="14" rx="3" fill="#65ffd0"/>
+      <rect x="324" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="342" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="360" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="378" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="396" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="414" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="432" width="14" height="14" rx="3" fill="#ff7aa8"/>
+      <rect x="450" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="468" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="486" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="504" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="522" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="540" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="558" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="576" width="14" height="14" rx="3" fill="#a78bfa"/>
+      <rect x="594" width="14" height="14" rx="3" fill="#7c5cff"/>
+      <rect x="612" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="630" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="648" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="666" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="684" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="702" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="720" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="738" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="756" width="14" height="14" rx="3" fill="#38bdf8"/>
+      <rect x="774" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="792" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="810" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="828" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="846" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="864" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="882" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="900" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="918" width="14" height="14" rx="3" fill="#65ffd0"/>
+      <rect x="936" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="954" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="972" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="990" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="1008" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="1026" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="1044" width="14" height="14" rx="3" fill="rgba(255,255,255,0.18)"/>
+      <rect x="1062" width="14" height="14" rx="3" fill="#ffc4da"/>
+    </g>
+    <path d="M10,80 C180,40 320,100 500,60 S720,20 900,70 S1000,90 1080,50" fill="none" stroke="url(#accent)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+  </g>
+
+  <text x="600" y="155" text-anchor="middle" font-family="Consolas, Monaco, monospace" font-size="18" font-weight="700" fill="rgba(255,255,255,0.5)">GitHub Snake Preview</text>
+  <text x="600" y="178" text-anchor="middle" font-family="Consolas, Monaco, monospace" font-size="13" fill="rgba(255,255,255,0.3)">Workflow will generate the real contribution snake SVG</text>
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vulnyx Writeups - 合集 - lpppp</title><link>https://lpppp.xyz/collections/vulnyx-writeups/</link><description>成功不是一种偶然，而是一种习惯。</description><generator>Hugo 0.161.1 &amp; FixIt v0.4.5</generator><language>zh-CN</language><managingEditor>1171498928@qq.com (lpppp)</managingEditor><webMaster>1171498928@qq.com (lpppp)</webMaster><lastBuildDate>Tue, 02 Jun 2026 02:14:50 +0000</lastBuildDate><atom:link href="https://lpppp.xyz/collections/vulnyx-writeups/index.xml" rel="self" type="application/rss+xml"/><item><title>Alpine</title><link>https://lpppp.xyz/posts/alpine/</link><pubDate>Sun, 14 Dec 2025 17:09:14 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/alpine/</guid><category domain="https://lpppp.xyz/categories/vulnyx/">Vulnyx</category><description>&lt;h1 class="heading-element" id="alpine"&gt;&lt;span&gt;Alpine&lt;/span&gt;
+ &lt;a href="#alpine" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;p&gt;&lt;img loading="lazy" src='https://lpppp.xyz/posts/alpine/images/PixPin_2025-12-15_21-04-28-20251215210437-va8rth9.png' alt="PixPin_2025-12-15_21-04-28" height="434" width="717"&gt;&lt;/p&gt;
+&lt;h1 class="heading-element" id="端口扫描"&gt;&lt;span&gt;端口扫描&lt;/span&gt;
+ &lt;a href="#%e7%ab%af%e5%8f%a3%e6%89%ab%e6%8f%8f" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;└─# nmap -sV -A 192.168.56.108 
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-12-16 00:31 CST
+Nmap scan report for 192.168.56.108
+Host is up (0.00061s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT STATE SERVICE VERSION
+22/tcp open ssh OpenSSH 10.2 (protocol 2.0)
+80/tcp open http Apache httpd 2.4.66
+|_http-server-header: Apache/2.4.66 (Unix)
+|_http-title: Did not follow redirect to http://alpine.nyx/
+MAC Address: 08:00:27:3A:FF:A5 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.8
+Network Distance: 1 hop
+Service Info: Host: default
+
+TRACEROUTE
+HOP RTT ADDRESS
+1 0.61 ms 192.168.56.108
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 8.42 seconds
+ &lt;/code&gt;&lt;/pre&gt;&lt;h1 class="heading-element" id="80tcp"&gt;&lt;span&gt;80/tcp&lt;/span&gt;
+ &lt;a href="#80tcp" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;p&gt;访问跳转到 &lt;a href="http://alpine.nyx/" target="_blank" rel="external nofollow noopener noreferrer"&gt;http://alpine.nyx/&lt;/a&gt; 加个 host，然后扫描一下目录&lt;/p&gt;</description></item></channel></rss>

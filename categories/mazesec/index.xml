@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MAZESEC - 分类 - lpppp</title><link>https://lpppp.xyz/categories/mazesec/</link><description>成功不是一种偶然，而是一种习惯。</description><generator>Hugo 0.161.1 &amp; FixIt v0.4.5</generator><language>zh-CN</language><managingEditor>1171498928@qq.com (lpppp)</managingEditor><webMaster>1171498928@qq.com (lpppp)</webMaster><lastBuildDate>Tue, 26 May 2026 01:39:54 +0000</lastBuildDate><atom:link href="https://lpppp.xyz/categories/mazesec/index.xml" rel="self" type="application/rss+xml"/><item><title>Acfun</title><link>https://lpppp.xyz/posts/acfun/</link><pubDate>Mon, 27 Apr 2026 10:11:26 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/acfun/</guid><category domain="https://lpppp.xyz/categories/mazesec/">MAZESEC</category><description>&lt;h2 class="heading-element" id="端口扫描"&gt;&lt;span&gt;端口扫描&lt;/span&gt;
+ &lt;a href="#%e7%ab%af%e5%8f%a3%e6%89%ab%e6%8f%8f" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;(base) ┌──(root㉿kali)-[~]
+└─# nmap -sV -A 192.168.56.163
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-04-27 02:21 UTC
+Nmap scan report for 192.168.56.163
+Host is up (0.0010s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT STATE SERVICE VERSION
+22/tcp open ssh OpenSSH 10.0 (protocol 2.0)
+139/tcp open netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open netbios-ssn Samba smbd 4.21.9 (workgroup: WORKGROUP)
+MAC Address: 08:00:27:37:69:22 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.8
+Network Distance: 1 hop
+Service Info: Host: ACFUN
+
+Host script results:
+|_clock-skew: mean: -2h40m01s, deviation: 4h37m07s, median: -1s
+| smb-os-discovery: 
+| OS: Windows 6.1 (Samba 4.21.9)
+| Computer name: localhost
+| NetBIOS computer name: ACFUN\x00
+| Domain name: 
+| FQDN: localhost
+|_ System time: 2026-04-27T10:21:22&amp;#43;08:00
+| smb-security-mode: 
+| account_used: guest
+| authentication_level: user
+| challenge_response: supported
+|_ message_signing: disabled (dangerous, but default)
+|_nbstat: NetBIOS name: ACFUN, NetBIOS user: &amp;lt;unknown&amp;gt;, NetBIOS MAC: &amp;lt;unknown&amp;gt; (unknown)
+| smb2-time: 
+| date: 2026-04-27T02:21:22
+|_ start_date: N/A
+| smb2-security-mode: 
+| 3:1:1: 
+|_ Message signing enabled but not required
+
+TRACEROUTE
+HOP RTT ADDRESS
+1 1.04 ms 192.168.56.163
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 13.66 seconds&lt;/code&gt;&lt;/pre&gt;&lt;h2 class="heading-element" id="445tcp"&gt;&lt;span&gt;445/tcp&lt;/span&gt;
+ &lt;a href="#445tcp" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;p&gt;没 web 端口。先看 SMB 吧，使用 &lt;code&gt;enum4linux-ng&lt;/code&gt; 枚举一下&lt;/p&gt;</description></item><item><title>Api</title><link>https://lpppp.xyz/posts/api/</link><pubDate>Wed, 10 Dec 2025 10:58:54 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/api/</guid><category domain="https://lpppp.xyz/categories/mazesec/">MAZESEC</category><description>&lt;h1 class="heading-element" id="api"&gt;&lt;span&gt;Api&lt;/span&gt;
+ &lt;a href="#api" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;h1 class="heading-element" id="扫描端口"&gt;&lt;span&gt;扫描端口&lt;/span&gt;
+ &lt;a href="#%e6%89%ab%e6%8f%8f%e7%ab%af%e5%8f%a3" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;└─# nmap 192.168.56.112
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-12-10 10:56 CST
+Nmap scan report for 192.168.56.112
+Host is up (0.00044s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT STATE SERVICE
+22/tcp open ssh
+80/tcp open http
+MAC Address: 08:00:27:D1:20:F9 (Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 13.25 seconds&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;审计源码发现有个 api 的目录&lt;/p&gt;</description></item></channel></rss>

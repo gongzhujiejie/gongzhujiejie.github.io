@@ -1,0 +1,1 @@
+window.config={"autoBookmark":true,"comment":{"enable":false},"lightgallery":true,"print":{"expandAdmonition":true,"expandCode":true,"expandDetails":true,"expandFileTree":false},"siteTime":"2025-01-01T00:00:00+08:00","tooltip":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"duration":-1,"loop":false,"speed":100},"version":"v0.4.5"};
