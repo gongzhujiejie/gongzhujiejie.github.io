@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MAZESEC - 分类 - lpppp</title><link>https://lpppp.xyz/categories/mazesec/</link><description>成功不是一种偶然，而是一种习惯。</description><generator>Hugo 0.161.1 &amp; FixIt v0.4.5</generator><language>zh-CN</language><managingEditor>1171498928@qq.com (lpppp)</managingEditor><webMaster>1171498928@qq.com (lpppp)</webMaster><lastBuildDate>Thu, 23 Jul 2026 16:55:33 +0000</lastBuildDate><atom:link href="https://lpppp.xyz/categories/mazesec/index.xml" rel="self" type="application/rss+xml"/><item><title>Bomb</title><link>https://lpppp.xyz/posts/bomb/</link><pubDate>Mon, 20 Jul 2026 17:26:31 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/bomb/</guid><category domain="https://lpppp.xyz/categories/mazesec/">MAZESEC</category><description>&lt;h1 class="heading-element" id="bomb"&gt;&lt;span&gt;Bomb&lt;/span&gt;
+ &lt;a href="#bomb" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;h2 class="heading-element" id="端口扫描"&gt;&lt;span&gt;端口扫描&lt;/span&gt;
+ &lt;a href="#%e7%ab%af%e5%8f%a3%e6%89%ab%e6%8f%8f" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;(base) ┌──(root㉿kali)-[/tmp]
+└─# rustscan -a 192.168.56.192 --ulimit 5000 -- -sV -A
+.----. .-. .-. .----..---. .----. .---. .--. .-. .-.
+| {} }| { } |{ {__ {_ _}{ {__ / ___} / {} \ | `| |
+| .-. \| {_} |.-._} } | | .-._} }\ }/ /\ \| |\ |
+`-&amp;#39; `-&amp;#39;`-----&amp;#39;`----&amp;#39; `-&amp;#39; `----&amp;#39; `---&amp;#39; `-&amp;#39; `-&amp;#39;`-&amp;#39; `-&amp;#39;
+The Modern Day Port Scanner.
+________________________________________
+: http://discord.skerritt.blog :
+: https://github.com/RustScan/RustScan :
+ --------------------------------------
+You miss 100% of the ports you don&amp;#39;t scan. - RustScan
+
+[~] The config file is expected to be at &amp;#34;/root/.rustscan.toml&amp;#34;
+[~] Automatically increasing ulimit value to 5000.
+Open 192.168.56.192:22
+Open 192.168.56.192:80
+[~] Starting Script(s)
+[&amp;gt;] Running script &amp;#34;nmap -vvv -p {{port}} -{{ipversion}} {{ip}} -sV -A&amp;#34; on ip 192.168.56.192
+Depending on the complexity of the script, results may take some time to appear.
+[~] Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-20 17:28 CST
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 17:28
+Completed NSE at 17:28, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 17:28
+Completed NSE at 17:28, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 17:28
+Completed NSE at 17:28, 0.01s elapsed
+Initiating ARP Ping Scan at 17:28
+Scanning 192.168.56.192 [1 port]
+Completed ARP Ping Scan at 17:28, 0.18s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 17:28
+Completed Parallel DNS resolution of 1 host. at 17:29, 13.00s elapsed
+DNS resolution of 1 IPs took 13.00s. Mode: Async [#: 2, OK: 0, NX: 0, DR: 1, SF: 0, TR: 4, CN: 0]
+Initiating SYN Stealth Scan at 17:29
+Scanning 192.168.56.192 [2 ports]
+Discovered open port 80/tcp on 192.168.56.192
+Discovered open port 22/tcp on 192.168.56.192
+Completed SYN Stealth Scan at 17:29, 0.03s elapsed (2 total ports)
+Initiating Service scan at 17:29
+Scanning 2 services on 192.168.56.192
+Completed Service scan at 17:29, 7.20s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against 192.168.56.192
+Retrying OS detection (try #2) against 192.168.56.192
+NSE: Script scanning 192.168.56.192.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 17:29
+Completed NSE at 17:29, 6.98s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 17:29
+Completed NSE at 17:29, 0.72s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 17:29
+Completed NSE at 17:29, 0.00s elapsed
+Nmap scan report for 192.168.56.192
+Host is up, received arp-response (0.0012s latency).
+Scanned at 2026-07-20 17:29:11 CST for 18s
+
+PORT STATE SERVICE REASON VERSION
+22/tcp open ssh syn-ack ttl 64 OpenSSH 10.3 (protocol 2.0)
+80/tcp open http syn-ack ttl 64 Apache httpd 2.4.67 ((Unix) PHP/8.1.34)
+|_http-favicon: Unknown favicon MD5: DCAB89B8E04BF53FCD7F6A44A8CB4FAE
+| http-robots.txt: 1 disallowed entry 
+|_/wp-admin/
+|_http-server-header: Apache/2.4.67 (Unix) PHP/8.1.34
+| http-methods: 
+|_ Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Bomb WordPress
+|_http-generator: WordPress 7.1-beta1
+MAC Address: 08:00:27:E8:20:A1 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), Linux 2.6.32 (94%), Linux 3.2 - 4.9 (94%), Linux 3.16 (94%), Linux 2.6.32 - 3.10 (93%), Linux 4.15 - 5.8 (93%), Linux 5.4 (93%), ASUS RT-N56U WAP (Linux 3.4) (93%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.94SVN%E=4%D=7/20%OT=22%CT=%CU=40008%PV=Y%DS=1%DC=D%G=N%M=080027%TM=6A5DEA79%P=x86_64-pc-linux-gnu)
+SEQ(SP=FC%GCD=1%ISR=109%TI=Z%CI=Z%II=I%TS=21)
+OPS(O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11NW9%O6=M5B4ST11)
+WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)
+ECN(R=Y%DF=Y%T=40%W=FAF0%O=M5B4NNSNW9%CC=Y%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S&amp;#43;%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S&amp;#43;%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S&amp;#43;%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 0.000 days (since Mon Jul 20 17:29:20 2026)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=252 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT ADDRESS
+1 1.20 ms 192.168.56.192
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 17:29
+Completed NSE at 17:29, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 17:29
+Completed NSE at 17:29, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 17:29
+Completed NSE at 17:29, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 32.90 seconds
+ Raw packets sent: 47 (3.672KB) | Rcvd: 31 (2.616KB)&lt;/code&gt;&lt;/pre&gt;&lt;h2 class="heading-element" id="80tcp"&gt;&lt;span&gt;80/tcp&lt;/span&gt;
+ &lt;a href="#80tcp" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;p&gt;是一个 WordPress，做个信息收集&lt;/p&gt;</description></item><item><title>11S</title><link>https://lpppp.xyz/posts/11s/</link><pubDate>Sat, 18 Jul 2026 23:32:22 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/11s/</guid><category domain="https://lpppp.xyz/categories/mazesec/">MAZESEC</category><description>&lt;h1 class="heading-element" id="11s"&gt;&lt;span&gt;11S&lt;/span&gt;
+ &lt;a href="#11s" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;h2 class="heading-element" id="端口扫描"&gt;&lt;span&gt;端口扫描&lt;/span&gt;
+ &lt;a href="#%e7%ab%af%e5%8f%a3%e6%89%ab%e6%8f%8f" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;(base) ┌──(root㉿kali)-[/tmp]
+└─# rustscan -a 192.168.23.133 --ulimit 5000 -- -sV -A
+.----. .-. .-. .----..---. .----. .---. .--. .-. .-.
+| {} }| { } |{ {__ {_ _}{ {__ / ___} / {} \ | `| |
+| .-. \| {_} |.-._} } | | .-._} }\ }/ /\ \| |\ |
+`-&amp;#39; `-&amp;#39;`-----&amp;#39;`----&amp;#39; `-&amp;#39; `----&amp;#39; `---&amp;#39; `-&amp;#39; `-&amp;#39;`-&amp;#39; `-&amp;#39;
+The Modern Day Port Scanner.
+________________________________________
+: http://discord.skerritt.blog :
+: https://github.com/RustScan/RustScan :
+ --------------------------------------
+Open ports, closed hearts.
+
+[~] The config file is expected to be at &amp;#34;/root/.rustscan.toml&amp;#34;
+[~] Automatically increasing ulimit value to 5000.
+Open 192.168.23.133:80
+Open 192.168.23.133:445
+Open 192.168.23.133:135
+Open 192.168.23.133:139
+Open 192.168.23.133:5985
+Open 192.168.23.133:8080
+Open 192.168.23.133:47001
+Open 192.168.23.133:49664
+Open 192.168.23.133:49665
+Open 192.168.23.133:49666
+Open 192.168.23.133:49667
+Open 192.168.23.133:49668
+Open 192.168.23.133:49670
+Open 192.168.23.133:49673
+[~] Starting Script(s)
+[&amp;gt;] Running script &amp;#34;nmap -vvv -p {{port}} -{{ipversion}} {{ip}} -sV -A&amp;#34; on ip 192.168.23.133
+Depending on the complexity of the script, results may take some time to appear.
+[~] Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-18 23:54 CST
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 23:54
+Completed NSE at 23:54, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 23:54
+Completed NSE at 23:54, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 23:54
+Completed NSE at 23:54, 0.00s elapsed
+Initiating ARP Ping Scan at 23:54
+Scanning 192.168.23.133 [1 port]
+Completed ARP Ping Scan at 23:54, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 23:54
+Completed Parallel DNS resolution of 1 host. at 23:54, 0.07s elapsed
+DNS resolution of 1 IPs took 0.07s. Mode: Async [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating SYN Stealth Scan at 23:54
+Scanning 192.168.23.133 [14 ports]
+Discovered open port 135/tcp on 192.168.23.133
+Discovered open port 8080/tcp on 192.168.23.133
+Discovered open port 139/tcp on 192.168.23.133
+Discovered open port 80/tcp on 192.168.23.133
+Discovered open port 445/tcp on 192.168.23.133
+Discovered open port 49668/tcp on 192.168.23.133
+Discovered open port 49665/tcp on 192.168.23.133
+Discovered open port 47001/tcp on 192.168.23.133
+Discovered open port 49666/tcp on 192.168.23.133
+Discovered open port 49670/tcp on 192.168.23.133
+Discovered open port 49673/tcp on 192.168.23.133
+Discovered open port 5985/tcp on 192.168.23.133
+Discovered open port 49667/tcp on 192.168.23.133
+Discovered open port 49664/tcp on 192.168.23.133
+Completed SYN Stealth Scan at 23:54, 0.03s elapsed (14 total ports)
+Initiating Service scan at 23:54
+Scanning 14 services on 192.168.23.133
+Service scan Timing: About 57.14% done; ETC: 23:55 (0:00:41 remaining)
+Completed Service scan at 23:55, 53.57s elapsed (14 services on 1 host)
+Initiating OS detection (try #1) against 192.168.23.133
+NSE: Script scanning 192.168.23.133.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 23:55
+Completed NSE at 23:55, 6.67s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 23:55
+Completed NSE at 23:55, 0.03s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 23:55
+Completed NSE at 23:55, 0.00s elapsed
+Nmap scan report for 192.168.23.133
+Host is up, received arp-response (0.00054s latency).
+Scanned at 2026-07-18 23:54:11 CST for 61s
+
+PORT STATE SERVICE REASON VERSION
+80/tcp open http syn-ack ttl 128 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+135/tcp open msrpc syn-ack ttl 128 Microsoft Windows RPC
+139/tcp open netbios-ssn syn-ack ttl 128 Microsoft Windows netbios-ssn
+445/tcp open microsoft-ds? syn-ack ttl 128
+5985/tcp open http syn-ack ttl 128 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+8080/tcp open http syn-ack ttl 128 Apache httpd 2.4.39 ((Win64) OpenSSL/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02)
+|_http-open-proxy: Proxy might be redirecting requests
+| http-git: 
+| 192.168.23.133:8080/.git/
+| Git repository found!
+| .git/COMMIT_EDITMSG matched patterns &amp;#39;passw&amp;#39;
+| .git/config matched patterns &amp;#39;user&amp;#39;
+| Repository description: Unnamed repository; edit this file &amp;#39;description&amp;#39; to name the...
+|_ Last commit message: Initial website deploy &amp;amp; author: kaada &amp;amp; TODO:change default...
+| http-methods: 
+|_ Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.39 (Win64) OpenSSL/1.1.1b mod_fcgid/2.3.9a mod_log_rotate/1.02
+|_http-title: Site doesn&amp;#39;t have a title (text/html; charset=UTF-8).
+47001/tcp open http syn-ack ttl 128 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+49664/tcp open msrpc syn-ack ttl 128 Microsoft Windows RPC
+49665/tcp open msrpc syn-ack ttl 128 Microsoft Windows RPC
+49666/tcp open msrpc syn-ack ttl 128 Microsoft Windows RPC
+49667/tcp open msrpc syn-ack ttl 128 Microsoft Windows RPC
+49668/tcp open msrpc syn-ack ttl 128 Microsoft Windows RPC
+49670/tcp open msrpc syn-ack ttl 128 Microsoft Windows RPC
+49673/tcp open msrpc syn-ack ttl 128 Microsoft Windows RPC
+MAC Address: 00:0C:29:26:F5:D2 (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Microsoft Windows 2019
+OS details: Microsoft Windows Server 2019
+TCP/IP fingerprint:
+OS:SCAN(V=7.94SVN%E=4%D=7/18%OT=80%CT=%CU=35042%PV=Y%DS=1%DC=D%G=N%M=000C29
+OS:%TM=6A5BA1E0%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=10A%TI=I%CI=I%II
+OS:=I%SS=S%TS=U)OPS(O1=M5B4NW8NNS%O2=M5B4NW8NNS%O3=M5B4NW8%O4=M5B4NW8NNS%O5
+OS:=M5B4NW8NNS%O6=M5B4NNS)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FF
+OS:70)ECN(R=Y%DF=Y%T=80%W=FFFF%O=M5B4NW8NNS%CC=Y%Q=)T1(R=Y%DF=Y%T=80%S=O%A=
+OS:S&amp;#43;%F=AS%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y
+OS:%T=80%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD
+OS:=0%Q=)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S&amp;#43;%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0
+OS:%S=A%A=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=0%S=Z%A=S&amp;#43;%F=AR%O=%RD=0%Q=)U1
+OS:(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI
+OS:=N%T=80%CD=Z)
+
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: 0s
+| nbstat: NetBIOS name: WIN-CO8A2CNP250, NetBIOS user: &amp;lt;unknown&amp;gt;, NetBIOS MAC: 00:0c:29:26:f5:d2 (VMware)
+| Names:
+| WIN-CO8A2CNP250&amp;lt;20&amp;gt; Flags: &amp;lt;unique&amp;gt;&amp;lt;active&amp;gt;
+| WIN-CO8A2CNP250&amp;lt;00&amp;gt; Flags: &amp;lt;unique&amp;gt;&amp;lt;active&amp;gt;
+| WORKGROUP&amp;lt;00&amp;gt; Flags: &amp;lt;group&amp;gt;&amp;lt;active&amp;gt;
+| Statistics:
+| 00:0c:29:26:f5:d2:00:00:00:00:00:00:00:00:00:00:00
+| 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+|_ 00:00:00:00:00:00:00:00:00:00:00:00:00:00
+| p2p-conficker: 
+| Checking for Conficker.C or higher...
+| Check 1 (port 12908/tcp): CLEAN (Couldn&amp;#39;t connect)
+| Check 2 (port 39576/tcp): CLEAN (Couldn&amp;#39;t connect)
+| Check 3 (port 44384/udp): CLEAN (Failed to receive data)
+| Check 4 (port 37980/udp): CLEAN (Timeout)
+|_ 0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+| 3:1:1: 
+|_ Message signing enabled but not required
+| smb2-time: 
+| date: 2026-07-18T15:55:07
+|_ start_date: N/A
+
+TRACEROUTE
+HOP RTT ADDRESS
+1 0.54 ms 192.168.23.133
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 23:55
+Completed NSE at 23:55, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 23:55
+Completed NSE at 23:55, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 23:55
+Completed NSE at 23:55, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 62.46 seconds
+ Raw packets sent: 31 (2.062KB) | Rcvd: 31 (1.922KB)&lt;/code&gt;&lt;/pre&gt;&lt;h2 class="heading-element" id="8080tcp"&gt;&lt;span&gt;8080/tcp&lt;/span&gt;
+ &lt;a href="#8080tcp" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;h3 class="heading-element" id="git-泄露分析"&gt;&lt;span&gt;Git 泄露分析&lt;/span&gt;
+ &lt;a href="#git-%e6%b3%84%e9%9c%b2%e5%88%86%e6%9e%90" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;目录扫描发现 &lt;code&gt;.git&lt;/code&gt; 目录泄露。&lt;/p&gt;</description></item><item><title>Stream2</title><link>https://lpppp.xyz/posts/stream2/</link><pubDate>Tue, 14 Jul 2026 13:42:02 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/stream2/</guid><category domain="https://lpppp.xyz/categories/mazesec/">MAZESEC</category><description>&lt;h1 class="heading-element" id="stream2"&gt;&lt;span&gt;Stream2&lt;/span&gt;
+ &lt;a href="#stream2" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;h2 class="heading-element" id="端口扫描"&gt;&lt;span&gt;端口扫描&lt;/span&gt;
+ &lt;a href="#%e7%ab%af%e5%8f%a3%e6%89%ab%e6%8f%8f" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;(base) ┌──(root㉿kali)-[/tmp]
+└─# rustscan -a 192.168.56.183 --ulimit 5000 -- -sV -A
+.----. .-. .-. .----..---. .----. .---. .--. .-. .-.
+| {} }| { } |{ {__ {_ _}{ {__ / ___} / {} \ | `| |
+| .-. \| {_} |.-._} } | | .-._} }\ }/ /\ \| |\ |
+`-&amp;#39; `-&amp;#39;`-----&amp;#39;`----&amp;#39; `-&amp;#39; `----&amp;#39; `---&amp;#39; `-&amp;#39; `-&amp;#39;`-&amp;#39; `-&amp;#39;
+The Modern Day Port Scanner.
+________________________________________
+: http://discord.skerritt.blog :
+: https://github.com/RustScan/RustScan :
+ --------------------------------------
+I scanned ports so fast, even my computer was surprised.
+
+[~] The config file is expected to be at &amp;#34;/root/.rustscan.toml&amp;#34;
+[~] Automatically increasing ulimit value to 5000.
+Open 192.168.56.183:22
+Open 192.168.56.183:8080
+[~] Starting Script(s)
+[&amp;gt;] Running script &amp;#34;nmap -vvv -p {{port}} -{{ipversion}} {{ip}} -sV -A&amp;#34; on ip 192.168.56.183
+Depending on the complexity of the script, results may take some time to appear.
+[~] Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-14 13:42 CST
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 13:42
+Completed NSE at 13:42, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 13:42
+Completed NSE at 13:42, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 13:42
+Completed NSE at 13:42, 0.00s elapsed
+Initiating ARP Ping Scan at 13:42
+Scanning 192.168.56.183 [1 port]
+Completed ARP Ping Scan at 13:42, 0.05s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 13:42
+Completed Parallel DNS resolution of 1 host. at 13:42, 0.07s elapsed
+DNS resolution of 1 IPs took 0.07s. Mode: Async [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating SYN Stealth Scan at 13:42
+Scanning 192.168.56.183 [2 ports]
+Discovered open port 8080/tcp on 192.168.56.183
+Discovered open port 22/tcp on 192.168.56.183
+Completed SYN Stealth Scan at 13:42, 0.01s elapsed (2 total ports)
+Initiating Service scan at 13:42
+Scanning 2 services on 192.168.56.183
+Completed Service scan at 13:44, 91.25s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against 192.168.56.183
+Retrying OS detection (try #2) against 192.168.56.183
+NSE: Script scanning 192.168.56.183.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 13:44
+Completed NSE at 13:44, 0.24s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 13:44
+Completed NSE at 13:44, 1.01s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 13:44
+Completed NSE at 13:44, 0.00s elapsed
+Nmap scan report for 192.168.56.183
+Host is up, received arp-response (0.00091s latency).
+Scanned at 2026-07-14 13:42:53 CST for 96s
+
+PORT STATE SERVICE REASON VERSION
+22/tcp open ssh syn-ack ttl 64 OpenSSH 10.4 (protocol 2.0)
+8080/tcp open http-proxy syn-ack ttl 64 Werkzeug/3.1.8 Python/3.14.5
+|_http-server-header: Werkzeug/3.1.8 Python/3.14.5
+| http-methods: 
+|_ Supported Methods: OPTIONS GET HEAD
+|_http-title: STRM//v11
+| fingerprint-strings: 
+| GetRequest: 
+| HTTP/1.1 200 OK
+| Server: Werkzeug/3.1.8 Python/3.14.5
+| Date: Tue, 14 Jul 2026 05:42:56 GMT
+| Content-Type: text/html; charset=utf-8
+| Content-Length: 3235
+| Connection: close
+| &amp;lt;!DOCTYPE html&amp;gt;
+| &amp;lt;html&amp;gt;
+| &amp;lt;head&amp;gt;
+| &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt;
+| &amp;lt;title&amp;gt;STRM//v11&amp;lt;/title&amp;gt;
+| &amp;lt;style&amp;gt;
+| @import url(&amp;#39;https://fonts.googleapis.com/css2?family=Share&amp;#43;Tech&amp;#43;Mono&amp;amp;display=swap&amp;#39;);
+| *{margin:0;padding:0;box-sizing:border-box}
+| body{
+| background:#08080e;
+| font-family:&amp;#39;Share Tech Mono&amp;#39;,monospace;
+| min-height:100vh;
+| display:flex;
+| justify-content:center;
+| align-items:center;
+| overflow:hidden
+| .grid{
+| position:fixed;inset:0;
+| background-image:
+| linear-gradient(rgba(0,255,255,.03) 1px,transparent 1px),
+| linear-gradient(90deg,rgba(0,255,255,.03) 1px,transparent 1px);
+| background-size:40px 40px;
+| animation:g 6s linear infinite
+| @keyframes g{100%{transform:translate(40px,40px
+| HTTPOptions: 
+| HTTP/1.1 200 OK
+| Server: Werkzeug/3.1.8 Python/3.14.5
+| Date: Tue, 14 Jul 2026 05:42:56 GMT
+| Content-Type: text/html; charset=utf-8
+| Allow: OPTIONS, GET, HEAD
+| Content-Length: 0
+| Connection: close
+| RTSPRequest: 
+| &amp;lt;!DOCTYPE HTML&amp;gt;
+| &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt;
+| &amp;lt;head&amp;gt;
+| &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt;
+| &amp;lt;style type=&amp;#34;text/css&amp;#34;&amp;gt;
+| :root {
+| color-scheme: light dark;
+| &amp;lt;/style&amp;gt;
+| &amp;lt;title&amp;gt;Error response&amp;lt;/title&amp;gt;
+| &amp;lt;/head&amp;gt;
+| &amp;lt;body&amp;gt;
+| &amp;lt;h1&amp;gt;Error response&amp;lt;/h1&amp;gt;
+| &amp;lt;p&amp;gt;Error code: 400&amp;lt;/p&amp;gt;
+| &amp;lt;p&amp;gt;Message: Bad request version (&amp;#39;RTSP/1.0&amp;#39;).&amp;lt;/p&amp;gt;
+| &amp;lt;p&amp;gt;Error code explanation: 400 - Bad request syntax or unsupported method.&amp;lt;/p&amp;gt;
+| &amp;lt;/body&amp;gt;
+|_ &amp;lt;/html&amp;gt;
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8080-TCP:V=7.94SVN%I=7%D=7/14%Time=6A55CC63%P=x86_64-pc-linux-gnu%r
+SF:(GetRequest,D52,&amp;#34;HTTP/1\.1\x20200\x20OK\r\nServer:\x20Werkzeug/3\.1\.8\
+SF:x20Python/3\.14\.5\r\nDate:\x20Tue,\x2014\x20Jul\x202026\x2005:42:56\x2
+SF:0GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nContent-Length:
+SF:\x203235\r\nConnection:\x20close\r\n\r\n&amp;lt;!DOCTYPE\x20html&amp;gt;\n&amp;lt;html&amp;gt;\n&amp;lt;he
+SF:ad&amp;gt;\n&amp;lt;meta\x20charset=\&amp;#34;UTF-8\&amp;#34;&amp;gt;\n&amp;lt;title&amp;gt;STRM//v11&amp;lt;/title&amp;gt;\n&amp;lt;style&amp;gt;\n\x
+SF:20\x20@import\x20url\(&amp;#39;https://fonts\.googleapis\.com/css2\?family=Shar
+SF:e\&amp;#43;Tech\&amp;#43;Mono&amp;amp;display=swap&amp;#39;\);\n\x20\x20\*{margin:0;padding:0;box-sizin
+SF:g:border-box}\n\x20\x20body{\n\x20\x20\x20\x20background:#08080e;\n\x20
+SF:\x20\x20\x20font-family:&amp;#39;Share\x20Tech\x20Mono&amp;#39;,monospace;\n\x20\x20\x2
+SF:0\x20min-height:100vh;\n\x20\x20\x20\x20display:flex;\n\x20\x20\x20\x20
+SF:justify-content:center;\n\x20\x20\x20\x20align-items:center;\n\x20\x20\
+SF:x20\x20overflow:hidden\n\x20\x20}\n\x20\x20\.grid{\n\x20\x20\x20\x20pos
+SF:ition:fixed;inset:0;\n\x20\x20\x20\x20background-image:\n\x20\x20\x20\x
+SF:20\x20\x20linear-gradient$rgba\(0,255,255,\.03$\x201px,transparent\x2
+SF:01px\),\n\x20\x20\x20\x20\x20\x20linear-gradient\(90deg,rgba\(0,255,255
+SF:,\.03\)\x201px,transparent\x201px\);\n\x20\x20\x20\x20background-size:4
+SF:0px\x2040px;\n\x20\x20\x20\x20animation:g\x206s\x20linear\x20infinite\n
+SF:\x20\x20}\n\x20\x20@keyframes\x20g{100%{transform:translate\(40px,40px&amp;#34;
+SF:)%r(HTTPOptions,C7,&amp;#34;HTTP/1\.1\x20200\x20OK\r\nServer:\x20Werkzeug/3\.1\
+SF:.8\x20Python/3\.14\.5\r\nDate:\x20Tue,\x2014\x20Jul\x202026\x2005:42:56
+SF:\x20GMT\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nAllow:\x20OP
+SF:TIONS,\x20GET,\x20HEAD\r\nContent-Length:\x200\r\nConnection:\x20close\
+SF:r\n\r\n&amp;#34;)%r(RTSPRequest,1E9,&amp;#34;&amp;lt;!DOCTYPE\x20HTML&amp;gt;\n&amp;lt;html\x20lang=\&amp;#34;en\&amp;#34;&amp;gt;\
+SF:n\x20\x20\x20\x20&amp;lt;head&amp;gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&amp;lt;meta\x20chars
+SF:et=\&amp;#34;utf-8\&amp;#34;&amp;gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&amp;lt;style\x20type=\&amp;#34;text/cs
+SF:s\&amp;#34;&amp;gt;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20:root\x20{\n\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color-scheme
+SF::\x20light\x20dark;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\
+SF:n\x20\x20\x20\x20\x20\x20\x20\x20&amp;lt;/style&amp;gt;\n\x20\x20\x20\x20\x20\x20\x20
+SF:\x20&amp;lt;title&amp;gt;Error\x20response&amp;lt;/title&amp;gt;\n\x20\x20\x20\x20&amp;lt;/head&amp;gt;\n\x20\x20
+SF:\x20\x20&amp;lt;body&amp;gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&amp;lt;h1&amp;gt;Error\x20response&amp;lt;/
+SF:h1&amp;gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&amp;lt;p&amp;gt;Error\x20code:\x20400&amp;lt;/p&amp;gt;\n\x20
+SF:\x20\x20\x20\x20\x20\x20\x20&amp;lt;p&amp;gt;Message:\x20Bad\x20request\x20version\x2
+SF:0$&amp;#39;RTSP/1\.0&amp;#39;$\.&amp;lt;/p&amp;gt;\n\x20\x20\x20\x20\x20\x20\x20\x20&amp;lt;p&amp;gt;Error\x20cod
+SF:e\x20explanation:\x20400\x20-\x20Bad\x20request\x20syntax\x20or\x20unsu
+SF:pported\x20method\.&amp;lt;/p&amp;gt;\n\x20\x20\x20\x20&amp;lt;/body&amp;gt;\n&amp;lt;/html&amp;gt;\n&amp;#34;);
+MAC Address: 08:00:27:08:F9:83 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), Linux 2.6.32 (94%), Linux 3.2 - 4.9 (94%), Linux 3.16 (94%), Linux 2.6.32 - 3.10 (93%), Linux 4.15 - 5.8 (93%), Linux 5.3 - 5.4 (93%), ASUS RT-N56U WAP (Linux 3.4) (93%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.94SVN%E=4%D=7/14%OT=22%CT=%CU=33296%PV=Y%DS=1%DC=D%G=N%M=080027%TM=6A55CCBD%P=x86_64-pc-linux-gnu)
+SEQ(SP=106%GCD=1%ISR=109%TI=Z%CI=Z%TS=22)
+SEQ(SP=106%GCD=1%ISR=109%TI=Z%CI=Z%II=I%TS=22)
+OPS(O1=M5B4ST11NW9%O2=M5B4ST11NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11NW9%O6=M5B4ST11)
+WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)
+ECN(R=Y%DF=Y%T=40%W=FAF0%O=M5B4NNSNW9%CC=Y%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S&amp;#43;%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S&amp;#43;%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S&amp;#43;%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 0.000 days (since Tue Jul 14 13:44:22 2026)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT ADDRESS
+1 0.91 ms 192.168.56.183
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 13:44
+Completed NSE at 13:44, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 13:44
+Completed NSE at 13:44, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 13:44
+Completed NSE at 13:44, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 96.59 seconds
+ Raw packets sent: 47 (3.672KB) | Rcvd: 31 (2.616KB)&lt;/code&gt;&lt;/pre&gt;&lt;h2 class="heading-element" id="8080tcp"&gt;&lt;span&gt;8080/tcp&lt;/span&gt;
+ &lt;a href="#8080tcp" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;p&gt;页面标题为 &lt;code&gt;STRM//v11&lt;/code&gt;​，页面信息提示核心接口是 &lt;code&gt;/stream&lt;/code&gt;​，并且 auth 关键字是 &lt;code&gt;StreamClient&lt;/code&gt;​。所以继续请求 &lt;code&gt;/stream&lt;/code&gt;&lt;/p&gt;</description></item><item><title>relax</title><link>https://lpppp.xyz/posts/relax/</link><pubDate>Sun, 12 Jul 2026 20:48:29 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/relax/</guid><category domain="https://lpppp.xyz/categories/mazesec/">MAZESEC</category><description>&lt;h1 class="heading-element" id="relax"&gt;&lt;span&gt;relax&lt;/span&gt;
+ &lt;a href="#relax" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;h2 class="heading-element" id="端口扫描"&gt;&lt;span&gt;端口扫描&lt;/span&gt;
+ &lt;a href="#%e7%ab%af%e5%8f%a3%e6%89%ab%e6%8f%8f" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;(base) ┌──(root㉿kali)-[/tmp]
+└─# rustscan -a 192.168.56.181 --ulimit 5000 -- -sV -A
+.----. .-. .-. .----..---. .----. .---. .--. .-. .-.
+| {} }| { } |{ {__ {_ _}{ {__ / ___} / {} \ | `| |
+| .-. \| {_} |.-._} } | | .-._} }\ }/ /\ \| |\ |
+`-&amp;#39; `-&amp;#39;`-----&amp;#39;`----&amp;#39; `-&amp;#39; `----&amp;#39; `---&amp;#39; `-&amp;#39; `-&amp;#39;`-&amp;#39; `-&amp;#39;
+The Modern Day Port Scanner.
+________________________________________
+: http://discord.skerritt.blog :
+: https://github.com/RustScan/RustScan :
+ --------------------------------------
+To scan or not to scan? That is the question.
+
+[~] The config file is expected to be at &amp;#34;/root/.rustscan.toml&amp;#34;
+[~] Automatically increasing ulimit value to 5000.
+Open 192.168.56.181:22
+Open 192.168.56.181:3000
+[~] Starting Script(s)
+[&amp;gt;] Running script &amp;#34;nmap -vvv -p {{port}} -{{ipversion}} {{ip}} -sV -A&amp;#34; on ip 192.168.56.181
+Depending on the complexity of the script, results may take some time to appear.
+[~] Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-12 20:47 CST
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:47
+Completed NSE at 20:47, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:47
+Completed NSE at 20:47, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:47
+Completed NSE at 20:47, 0.00s elapsed
+Initiating ARP Ping Scan at 20:47
+Scanning 192.168.56.181 [1 port]
+Completed ARP Ping Scan at 20:47, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:47
+Completed Parallel DNS resolution of 1 host. at 20:47, 0.07s elapsed
+DNS resolution of 1 IPs took 0.07s. Mode: Async [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating SYN Stealth Scan at 20:47
+Scanning 192.168.56.181 [2 ports]
+Discovered open port 22/tcp on 192.168.56.181
+Discovered open port 3000/tcp on 192.168.56.181
+Completed SYN Stealth Scan at 20:47, 0.01s elapsed (2 total ports)
+Initiating Service scan at 20:47
+Scanning 2 services on 192.168.56.181
+Completed Service scan at 20:48, 11.21s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against 192.168.56.181
+Retrying OS detection (try #2) against 192.168.56.181
+NSE: Script scanning 192.168.56.181.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:48
+Completed NSE at 20:48, 0.19s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:48
+Completed NSE at 20:48, 0.01s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:48
+Completed NSE at 20:48, 0.00s elapsed
+Nmap scan report for 192.168.56.181
+Host is up, received arp-response (0.00063s latency).
+Scanned at 2026-07-12 20:47:57 CST for 15s
+
+PORT STATE SERVICE REASON VERSION
+22/tcp open ssh syn-ack ttl 64 OpenSSH 10.0p2 Debian 7&amp;#43;deb13u4 (protocol 2.0)
+3000/tcp open ppp? syn-ack ttl 64
+| fingerprint-strings: 
+| DNSVersionBindReqTCP, Help, NCP, RPCCheck: 
+| HTTP/1.1 400 Bad Request
+| Connection: close
+| GetRequest: 
+| HTTP/1.1 200 OK
+| Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding
+| x-nextjs-cache: HIT
+| x-nextjs-prerender: 1
+| x-nextjs-prerender: 1
+| x-nextjs-stale-time: 300
+| X-Powered-By: Next.js
+| Cache-Control: s-maxage=31536000
+| ETag: &amp;#34;9z5nlrjp0vaf2&amp;#34;
+| Content-Type: text/html; charset=utf-8
+| Content-Length: 13534
+| Date: Sun, 12 Jul 2026 12:48:07 GMT
+| Connection: close
+| &amp;lt;script src=&amp;#34;/_next/static/chunks/664adc71bc2617c2.js&amp;#34; noModule=&amp;#34;&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;meta charSet=&amp;#34;utf-8&amp;#34;/&amp;gt;&amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1&amp;#34;/&amp;gt;&amp;lt;link rel=&amp;#34;preload&amp;#34; as=&amp;#34;script&amp;#34; fetchPriority=&amp;#34;low&amp;#34; href=&amp;#34;/_next/static/chunks/cbd55ab9639e1e66.js&amp;#34;/&amp;gt;&amp;lt;script src=&amp;#34;/_next/static/chunks/a4403f826d0efc9f.js&amp;#34; async=&amp;#34;&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script src=&amp;#34;/_next/static/chunks/87a939617be2fa8c.js&amp;#34; async=&amp;#34;&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script src=&amp;#34;/_next/static/chunks/turbopack-9e886ff5105ab694.js&amp;#34; async
+| HTTPOptions, RTSPRequest: 
+| HTTP/1.1 405 Method Not Allowed
+| vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+| Allow: GET
+| Allow: HEAD
+| Date: Sun, 12 Jul 2026 12:48:07 GMT
+| Connection: close
+|_ Method Not Allowed
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3000-TCP:V=7.94SVN%I=7%D=7/12%Time=6A538D08%P=x86_64-pc-linux-gnu%r
+SF:(GetRequest,1C48,&amp;#34;HTTP/1\.1\x20200\x20OK\r\nVary:\x20rsc,\x20next-route
+SF:r-state-tree,\x20next-router-prefetch,\x20next-router-segment-prefetch,
+SF:\x20Accept-Encoding\r\nx-nextjs-cache:\x20HIT\r\nx-nextjs-prerender:\x2
+SF:01\r\nx-nextjs-prerender:\x201\r\nx-nextjs-stale-time:\x20300\r\nX-Powe
+SF:red-By:\x20Next\.js\r\nCache-Control:\x20s-maxage=31536000\r\nETag:\x20
+SF:\&amp;#34;9z5nlrjp0vaf2\&amp;#34;\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nCo
+SF:ntent-Length:\x2013534\r\nDate:\x20Sun,\x2012\x20Jul\x202026\x2012:48:0
+SF:7\x20GMT\r\nConnection:\x20close\r\n\r\n&amp;lt;script\x20src=\&amp;#34;/_next/static/
+SF:chunks/664adc71bc2617c2\.js\&amp;#34;\x20noModule=\&amp;#34;\&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;meta\x20charSe
+SF:t=\&amp;#34;utf-8\&amp;#34;/&amp;gt;&amp;lt;meta\x20name=\&amp;#34;viewport\&amp;#34;\x20content=\&amp;#34;width=device-width
+SF:,\x20initial-scale=1\&amp;#34;/&amp;gt;&amp;lt;link\x20rel=\&amp;#34;preload\&amp;#34;\x20as=\&amp;#34;script\&amp;#34;\x20fe
+SF:tchPriority=\&amp;#34;low\&amp;#34;\x20href=\&amp;#34;/_next/static/chunks/cbd55ab9639e1e66\.js
+SF:\&amp;#34;/&amp;gt;&amp;lt;script\x20src=\&amp;#34;/_next/static/chunks/a4403f826d0efc9f\.js\&amp;#34;\x20asy
+SF:nc=\&amp;#34;\&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script\x20src=\&amp;#34;/_next/static/chunks/87a939617be2fa8c
+SF:\.js\&amp;#34;\x20async=\&amp;#34;\&amp;#34;&amp;gt;&amp;lt;/script&amp;gt;&amp;lt;script\x20src=\&amp;#34;/_next/static/chunks/tur
+SF:bopack-9e886ff5105ab694\.js\&amp;#34;\x20async&amp;#34;)%r(Help,2F,&amp;#34;HTTP/1\.1\x20400\x2
+SF:0Bad\x20Request\r\nConnection:\x20close\r\n\r\n&amp;#34;)%r(NCP,2F,&amp;#34;HTTP/1\.1\x
+SF:20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&amp;#34;)%r(HTTPOptions
+SF:,DD,&amp;#34;HTTP/1\.1\x20405\x20Method\x20Not\x20Allowed\r\nvary:\x20rsc,\x20n
+SF:ext-router-state-tree,\x20next-router-prefetch,\x20next-router-segment-
+SF:prefetch\r\nAllow:\x20GET\r\nAllow:\x20HEAD\r\nDate:\x20Sun,\x2012\x20J
+SF:ul\x202026\x2012:48:07\x20GMT\r\nConnection:\x20close\r\n\r\nMethod\x20
+SF:Not\x20Allowed&amp;#34;)%r(RTSPRequest,DD,&amp;#34;HTTP/1\.1\x20405\x20Method\x20Not\x2
+SF:0Allowed\r\nvary:\x20rsc,\x20next-router-state-tree,\x20next-router-pre
+SF:fetch,\x20next-router-segment-prefetch\r\nAllow:\x20GET\r\nAllow:\x20HE
+SF:AD\r\nDate:\x20Sun,\x2012\x20Jul\x202026\x2012:48:07\x20GMT\r\nConnecti
+SF:on:\x20close\r\n\r\nMethod\x20Not\x20Allowed&amp;#34;)%r(RPCCheck,2F,&amp;#34;HTTP/1\.1
+SF:\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n&amp;#34;)%r(DNSVersio
+SF:nBindReqTCP,2F,&amp;#34;HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20cl
+SF:ose\r\n\r\n&amp;#34;);
+MAC Address: 08:00:27:22:D4:33 (Oracle VirtualBox virtual NIC)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (95%), Android 5.0 - 7.0 (Linux 3.4 - 3.10) (94%), Linux 2.6.32 (94%), Linux 3.2 - 4.9 (94%), Linux 2.6.32 - 3.10 (93%), Linux 4.15 - 5.8 (93%), Linux 5.4 (93%), Linux 5.3 - 5.4 (93%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.94SVN%E=4%D=7/12%OT=22%CT=%CU=43598%PV=Y%DS=1%DC=D%G=N%M=080027%TM=6A538D0C%P=x86_64-pc-linux-gnu)
+SEQ(SP=102%GCD=1%ISR=10D%TI=Z%CI=Z%TS=22)
+SEQ(SP=102%GCD=1%ISR=10D%TI=Z%CI=Z%II=I%TS=22)
+OPS(O1=M5B4ST11NW8%O2=M5B4ST11NW8%O3=M5B4NNT11NW8%O4=M5B4ST11NW8%O5=M5B4ST11NW8%O6=M5B4ST11)
+WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)
+ECN(R=Y%DF=Y%T=40%W=FAF0%O=M5B4NNSNW8%CC=Y%Q=)
+T1(R=Y%DF=Y%T=40%S=O%A=S&amp;#43;%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S&amp;#43;%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S&amp;#43;%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 0.000 days (since Sun Jul 12 20:48:05 2026)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT ADDRESS
+1 0.63 ms 192.168.56.181
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 20:48
+Completed NSE at 20:48, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 20:48
+Completed NSE at 20:48, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 20:48
+Completed NSE at 20:48, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 15.51 seconds
+ Raw packets sent: 47 (3.672KB) | Rcvd: 31 (2.616KB)&lt;/code&gt;&lt;/pre&gt;&lt;h2 class="heading-element" id="3000tcp"&gt;&lt;span&gt;3000/tcp&lt;/span&gt;
+ &lt;a href="#3000tcp" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;p&gt;访问首页，页面标题是 &lt;code&gt;Maze Research Platform&lt;/code&gt;，内容基本全是静态说明文字，没发现其他东西。&lt;/p&gt;</description></item><item><title>Tommy</title><link>https://lpppp.xyz/posts/tommy/</link><pubDate>Sat, 11 Jul 2026 13:46:50 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/tommy/</guid><category domain="https://lpppp.xyz/categories/mazesec/">MAZESEC</category><description>&lt;h1 class="heading-element" id="tommy"&gt;&lt;span&gt;Tommy&lt;/span&gt;
+ &lt;a href="#tommy" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;h2 class="heading-element" id="端口扫描"&gt;&lt;span&gt;端口扫描&lt;/span&gt;
+ &lt;a href="#%e7%ab%af%e5%8f%a3%e6%89%ab%e6%8f%8f" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;(base) ┌──(root㉿kali)-[~/projects/ctfesc]
+└─# rustscan -a 192.168.56.178 --ulimit 5000 -- -sV -sC
+.----. .-. .-. .----..---. .----. .---. .--. .-. .-.
+| {} }| { } |{ {__ {_ _}{ {__ / ___} / {} \ | `| |
+| .-. \| {_} |.-._} } | | .-._} }\ }/ /\ \| |\ |
+`-&amp;#39; `-&amp;#39;`-----&amp;#39;`----&amp;#39; `-&amp;#39; `----&amp;#39; `---&amp;#39; `-&amp;#39; `-&amp;#39;`-&amp;#39; `-&amp;#39;
+The Modern Day Port Scanner.
+________________________________________
+: http://discord.skerritt.blog :
+: https://github.com/RustScan/RustScan :
+ --------------------------------------
+Port scanning: Making networking exciting since... whenever.
+
+[~] The config file is expected to be at &amp;#34;/root/.rustscan.toml&amp;#34;
+[~] Automatically increasing ulimit value to 5000.
+Open 192.168.56.178:22
+Open 192.168.56.178:4000
+Open 192.168.56.178:80
+Open 192.168.56.178:5005
+Open 192.168.56.178:8080
+[~] Starting Script(s)
+[&amp;gt;] Running script &amp;#34;nmap -vvv -p {{port}} -{{ipversion}} {{ip}} -sV -sC&amp;#34; on ip 192.168.56.178
+Depending on the complexity of the script, results may take some time to appear.
+[~] Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-11 17:35 CST
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 17:35
+Completed NSE at 17:35, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 17:35
+Completed NSE at 17:35, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 17:35
+Completed NSE at 17:35, 0.00s elapsed
+Initiating ARP Ping Scan at 17:35
+Scanning 192.168.56.178 [1 port]
+Completed ARP Ping Scan at 17:35, 0.04s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 17:35
+Completed Parallel DNS resolution of 1 host. at 17:35, 0.04s elapsed
+DNS resolution of 1 IPs took 0.04s. Mode: Async [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating SYN Stealth Scan at 17:35
+Scanning 192.168.56.178 [5 ports]
+Discovered open port 22/tcp on 192.168.56.178
+Discovered open port 80/tcp on 192.168.56.178
+Discovered open port 8080/tcp on 192.168.56.178
+Discovered open port 5005/tcp on 192.168.56.178
+Discovered open port 4000/tcp on 192.168.56.178
+Completed SYN Stealth Scan at 17:35, 0.02s elapsed (5 total ports)
+Initiating Service scan at 17:35
+Scanning 5 services on 192.168.56.178
+Completed Service scan at 17:37, 161.22s elapsed (5 services on 1 host)
+NSE: Script scanning 192.168.56.178.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 17:37
+Completed NSE at 17:38, 14.16s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 17:38
+Completed NSE at 17:38, 1.01s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 17:38
+Completed NSE at 17:38, 0.00s elapsed
+Nmap scan report for 192.168.56.178
+Host is up, received arp-response (0.00070s latency).
+Scanned at 2026-07-11 17:35:07 CST for 177s
+
+PORT STATE SERVICE REASON VERSION
+22/tcp open ssh syn-ack ttl 64 OpenSSH 10.3 (protocol 2.0)
+80/tcp open http syn-ack ttl 64 Apache httpd 2.4.67 ((Unix))
+|_http-server-header: Apache/2.4.67 (Unix)
+| http-methods: 
+| Supported Methods: HEAD GET POST OPTIONS TRACE
+|_ Potentially risky methods: TRACE
+|_http-title: Site doesn&amp;#39;t have a title (text/html).
+4000/tcp open remoteanything? syn-ack ttl 63
+5005/tcp open jdwp syn-ack ttl 63 Java Debug Wire Protocol (Reference Implementation) version 1.8 1.8.0_482
+|_jdwp-info: ERROR: Script execution failed (use -d to debug)
+8080/tcp open http syn-ack ttl 63 Apache Tomcat 9.0.116
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-favicon: Apache Tomcat
+|_http-title: Apache Tomcat/9.0.116
+| http-methods: 
+|_ Supported Methods: GET HEAD POST OPTIONS
+MAC Address: 08:00:27:9C:52:14 (Oracle VirtualBox virtual NIC)
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 17:38
+Completed NSE at 17:38, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 17:38
+Completed NSE at 17:38, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 17:38
+Completed NSE at 17:38, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 176.93 seconds
+ Raw packets sent: 6 (248B) | Rcvd: 6 (248B)&lt;/code&gt;&lt;/pre&gt;&lt;h2 class="heading-element" id="5005tcp"&gt;&lt;span&gt;5005/tcp&lt;/span&gt;
+ &lt;a href="#5005tcp" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;p&gt;可以发现有 &lt;code&gt;5005/tcp&lt;/code&gt;​。在 Java/Tomcat 场景里，&lt;code&gt;5005&lt;/code&gt;​ 经常是 JDWP 远程调试端口。JDWP 如果直接暴露在网络上，并且没有访问控制，攻击者可以通过调试协议在 JVM 里调用方法，进一步触发 &lt;code&gt;Runtime.exec()&lt;/code&gt; 执行系统命令。&lt;/p&gt;</description></item><item><title>GreenLeaf</title><link>https://lpppp.xyz/posts/greenleaf/</link><pubDate>Wed, 08 Jul 2026 15:22:06 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/greenleaf/</guid><category domain="https://lpppp.xyz/categories/mazesec/">MAZESEC</category><description>&lt;h1 class="heading-element" id="greenleaf"&gt;&lt;span&gt;GreenLeaf&lt;/span&gt;
+ &lt;a href="#greenleaf" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;h2 class="heading-element" id="端口扫描"&gt;&lt;span&gt;端口扫描&lt;/span&gt;
+ &lt;a href="#%e7%ab%af%e5%8f%a3%e6%89%ab%e6%8f%8f" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;(base) ┌──(root㉿kali)-[~]
+└─# nmap 192.168.56.172
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-08 07:17 UTC
+Nmap scan report for 192.168.56.172
+Host is up (0.00080s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT STATE SERVICE
+22/tcp open ssh
+80/tcp open http
+MAC Address: 08:00:27:87:0B:4F (Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.25 seconds&lt;/code&gt;&lt;/pre&gt;&lt;h2 class="heading-element" id="80tcp"&gt;&lt;span&gt;80/tcp&lt;/span&gt;
+ &lt;a href="#80tcp" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;p&gt;发现可以通过 ssrf 读取到文件，可以把源码读出来，&lt;code&gt;/var/www/html/index.php&lt;/code&gt;&lt;/p&gt;</description></item><item><title>badbox</title><link>https://lpppp.xyz/posts/badbox/</link><pubDate>Tue, 07 Jul 2026 20:11:56 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/badbox/</guid><category domain="https://lpppp.xyz/categories/mazesec/">MAZESEC</category><description>&lt;h1 class="heading-element" id="badbox"&gt;&lt;span&gt;badbox&lt;/span&gt;
+ &lt;a href="#badbox" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;h2 class="heading-element" id="端口扫描"&gt;&lt;span&gt;端口扫描&lt;/span&gt;
+ &lt;a href="#%e7%ab%af%e5%8f%a3%e6%89%ab%e6%8f%8f" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;(base) ┌──(root㉿kali)-[~]
+└─# nmap 192.168.56.171
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-07-07 12:12 UTC
+Nmap scan report for 192.168.56.171
+Host is up (0.00068s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT STATE SERVICE
+22/tcp open ssh
+80/tcp open http
+MAC Address: 08:00:27:06:EA:A3 (Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.43 seconds
+ &lt;/code&gt;&lt;/pre&gt;&lt;h2 class="heading-element" id="80tcp"&gt;&lt;span&gt;80/tcp&lt;/span&gt;
+ &lt;a href="#80tcp" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;p&gt;访问 80 页面&lt;/p&gt;</description></item><item><title>Acfun</title><link>https://lpppp.xyz/posts/acfun/</link><pubDate>Mon, 27 Apr 2026 10:11:26 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/acfun/</guid><category domain="https://lpppp.xyz/categories/mazesec/">MAZESEC</category><description>&lt;h2 class="heading-element" id="端口扫描"&gt;&lt;span&gt;端口扫描&lt;/span&gt;
+ &lt;a href="#%e7%ab%af%e5%8f%a3%e6%89%ab%e6%8f%8f" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;(base) ┌──(root㉿kali)-[~]
+└─# nmap -sV -A 192.168.56.163
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-04-27 02:21 UTC
+Nmap scan report for 192.168.56.163
+Host is up (0.0010s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT STATE SERVICE VERSION
+22/tcp open ssh OpenSSH 10.0 (protocol 2.0)
+139/tcp open netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp open netbios-ssn Samba smbd 4.21.9 (workgroup: WORKGROUP)
+MAC Address: 08:00:27:37:69:22 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.8
+Network Distance: 1 hop
+Service Info: Host: ACFUN
+
+Host script results:
+|_clock-skew: mean: -2h40m01s, deviation: 4h37m07s, median: -1s
+| smb-os-discovery: 
+| OS: Windows 6.1 (Samba 4.21.9)
+| Computer name: localhost
+| NetBIOS computer name: ACFUN\x00
+| Domain name: 
+| FQDN: localhost
+|_ System time: 2026-04-27T10:21:22&amp;#43;08:00
+| smb-security-mode: 
+| account_used: guest
+| authentication_level: user
+| challenge_response: supported
+|_ message_signing: disabled (dangerous, but default)
+|_nbstat: NetBIOS name: ACFUN, NetBIOS user: &amp;lt;unknown&amp;gt;, NetBIOS MAC: &amp;lt;unknown&amp;gt; (unknown)
+| smb2-time: 
+| date: 2026-04-27T02:21:22
+|_ start_date: N/A
+| smb2-security-mode: 
+| 3:1:1: 
+|_ Message signing enabled but not required
+
+TRACEROUTE
+HOP RTT ADDRESS
+1 1.04 ms 192.168.56.163
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 13.66 seconds&lt;/code&gt;&lt;/pre&gt;&lt;h2 class="heading-element" id="445tcp"&gt;&lt;span&gt;445/tcp&lt;/span&gt;
+ &lt;a href="#445tcp" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;p&gt;没 web 端口。先看 SMB 吧，使用 &lt;code&gt;enum4linux-ng&lt;/code&gt; 枚举一下&lt;/p&gt;</description></item><item><title>Api</title><link>https://lpppp.xyz/posts/api/</link><pubDate>Wed, 10 Dec 2025 10:58:54 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/api/</guid><category domain="https://lpppp.xyz/categories/mazesec/">MAZESEC</category><description>&lt;h1 class="heading-element" id="api"&gt;&lt;span&gt;Api&lt;/span&gt;
+ &lt;a href="#api" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;h1 class="heading-element" id="扫描端口"&gt;&lt;span&gt;扫描端口&lt;/span&gt;
+ &lt;a href="#%e6%89%ab%e6%8f%8f%e7%ab%af%e5%8f%a3" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;pre&gt;&lt;code&gt;└─# nmap 192.168.56.112
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-12-10 10:56 CST
+Nmap scan report for 192.168.56.112
+Host is up (0.00044s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT STATE SERVICE
+22/tcp open ssh
+80/tcp open http
+MAC Address: 08:00:27:D1:20:F9 (Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 13.25 seconds&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;审计源码发现有个 api 的目录&lt;/p&gt;</description></item><item><title>Monkey</title><link>https://lpppp.xyz/posts/monkey/</link><pubDate>Sun, 30 Nov 2025 14:18:00 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/monkey/</guid><category domain="https://lpppp.xyz/categories/mazesec/">MAZESEC</category><description>&lt;h1 class="heading-element" id="monkey"&gt;&lt;span&gt;Monkey&lt;/span&gt;
+ &lt;a href="#monkey" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;h2 class="heading-element" id="端口扫描"&gt;&lt;span&gt;端口扫描&lt;/span&gt;
+ &lt;a href="#%e7%ab%af%e5%8f%a3%e6%89%ab%e6%8f%8f" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;└─# nmap -sV -A 192.168.56.101
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2025-12-01 16:23 CST
+Nmap scan report for 192.168.56.101
+Host is up (0.00055s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT STATE SERVICE VERSION
+22/tcp open ssh OpenSSH 8.4p1 Debian 5&amp;#43;deb11u3 (protocol 2.0)
+| ssh-hostkey: 
+| 3072 f6:a3:b6:78:c4:62:af:44:bb:1a:a0:0c:08:6b:98:f7 (RSA)
+| 256 bb:e8:a2:31:d4:05:a9:c9:31:ff:62:f6:32:84:21:9d (ECDSA)
+|_ 256 3b:ae:34:64:4f:a5:75:b9:4a:b9:81:f9:89:76:99:eb (ED25519)
+80/tcp open http Apache httpd 2.4.62 ((Debian))
+|_http-title: \xE6\xB2\xB9\xE7\x8C\xB4\xE6\x8F\x92\xE4\xBB\xB6\xE4\xBB\x8B\xE7\xBB\x8D
+|_http-server-header: Apache/2.4.62 (Debian)
+MAC Address: 08:00:27:16:40:04 (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.8
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT ADDRESS
+1 0.55 ms 192.168.56.101
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 21.71 seconds&lt;/code&gt;&lt;/pre&gt;&lt;h2 class="heading-element" id="80-端口信息收集"&gt;&lt;span&gt;80 端口信息收集&lt;/span&gt;
+ &lt;a href="#80-%e7%ab%af%e5%8f%a3%e4%bf%a1%e6%81%af%e6%94%b6%e9%9b%86" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;p&gt;发现 80 端口，访问&lt;/p&gt;</description></item><item><title>Word</title><link>https://lpppp.xyz/posts/word/</link><pubDate>Sun, 30 Nov 2025 00:57:58 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/word/</guid><category domain="https://lpppp.xyz/categories/mazesec/">MAZESEC</category><description>&lt;h1 class="heading-element" id="word"&gt;&lt;span&gt;Word&lt;/span&gt;
+ &lt;a href="#word" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;p&gt;&lt;img loading="lazy" src='https://lpppp.xyz/posts/word/images/PixPin_2025-11-30_00-58-39-20251130005840-b6ueg1r.png' alt="PixPin_2025-11-30_00-58-39" height="624" width="798"&gt;&lt;/p&gt;
+&lt;h2 class="heading-element" id="端口扫描"&gt;&lt;span&gt;端口扫描&lt;/span&gt;
+ &lt;a href="#%e7%ab%af%e5%8f%a3%e6%89%ab%e6%8f%8f" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;p&gt;‍&lt;/p&gt;</description></item></channel></rss>

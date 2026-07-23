@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>应急响应 - 标签 - lpppp</title><link>https://lpppp.xyz/tags/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94/</link><description>成功不是一种偶然，而是一种习惯。</description><generator>Hugo 0.161.1 &amp; FixIt v0.4.5</generator><language>zh-CN</language><managingEditor>1171498928@qq.com (lpppp)</managingEditor><webMaster>1171498928@qq.com (lpppp)</webMaster><lastBuildDate>Tue, 23 Jun 2026 09:07:39 +0000</lastBuildDate><atom:link href="https://lpppp.xyz/tags/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94/index.xml" rel="self" type="application/rss+xml"/><item><title>日志排查</title><link>https://lpppp.xyz/posts/%E6%97%A5%E5%BF%97%E6%8E%92%E6%9F%A5/</link><pubDate>Tue, 16 Jun 2026 23:15:25 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/%E6%97%A5%E5%BF%97%E6%8E%92%E6%9F%A5/</guid><category domain="https://lpppp.xyz/categories/%E6%97%A5%E5%BF%97%E5%88%86%E6%9E%90/">日志分析</category><description>&lt;h1 class="heading-element" id="日志排查"&gt;&lt;span&gt;日志排查&lt;/span&gt;
+ &lt;a href="#%e6%97%a5%e5%bf%97%e6%8e%92%e6%9f%a5" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;p&gt;来自：第二届Solar杯应急响应挑战赛&lt;/p&gt;
+&lt;p&gt;题目：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;时间：2025年12月17日 事件：安全运营中心（SOC）监测到数据库服务器流量异常，随后发现管理员组中出现不明账号。任务：请根据提供的日志文件（MSSQL ERRORLOG、Windows 安全日志、系统镜像/注册表），按时间顺序回答以下问题&lt;/p&gt;</description></item><item><title>仿真DMZ环境应急响应-第二届Solar杯应急响应挑战赛</title><link>https://lpppp.xyz/posts/%E4%BB%BF%E7%9C%9Fdmz%E7%8E%AF%E5%A2%83%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94-%E7%AC%AC%E4%BA%8C%E5%B1%8Asolar%E6%9D%AF%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E6%8C%91%E6%88%98%E8%B5%9B/</link><pubDate>Fri, 12 Jun 2026 11:11:53 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/%E4%BB%BF%E7%9C%9Fdmz%E7%8E%AF%E5%A2%83%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94-%E7%AC%AC%E4%BA%8C%E5%B1%8Asolar%E6%9D%AF%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E6%8C%91%E6%88%98%E8%B5%9B/</guid><category domain="https://lpppp.xyz/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA/">应急响应靶机</category><description>&lt;h1 class="heading-element" id="仿真dmz环境应急响应-第二届solar杯应急响应挑战赛"&gt;&lt;span&gt;仿真DMZ环境应急响应-第二届Solar杯应急响应挑战赛&lt;/span&gt;
+ &lt;a href="#%e4%bb%bf%e7%9c%9fdmz%e7%8e%af%e5%a2%83%e5%ba%94%e6%80%a5%e5%93%8d%e5%ba%94-%e7%ac%ac%e4%ba%8c%e5%b1%8asolar%e6%9d%af%e5%ba%94%e6%80%a5%e5%93%8d%e5%ba%94%e6%8c%91%e6%88%98%e8%b5%9b" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;p&gt;题目：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;仿真DMZ环境应急响应&lt;br&gt;
+描述：&lt;br&gt;
+本次环境取自于实际应用中dmz隔离，仿真模拟了(生产车间/测试车间)环境，其中Windows server 2019系统为主要突破点，此机器搭建了一个对外开放的论坛，以便于让员工、客户等能够及时看到企业动态&lt;br&gt;
+由于企业对于网络安全疏忽，未对生产车间及其它区域服务器做物理隔离，导致攻击者以Windows server 2019系统(DMZ1)为突破口攻击成功，获取终端权限后，攻击者未收手，而是进行内网漏洞扫描，拿下另一台Ubuntu(DMZ2)的机器，并做了权限维持操作，请根据题目描述依次排查进行学习&lt;br&gt;
+注意：这些攻击都是在无安全设备的情况下进行的，所以在实战中遇到需根据日志及可能存在的漏洞去判断、测试、复盘等条件总结&lt;br&gt;
+注意：web日志与系统日志有时区差别，这也仿真了在实战中一些开放配置不当导致的溯源难度加大问题&lt;br&gt;
+机器1：Windows server 2019(双网卡)，账号密码：administrator/Solarsec521&lt;br&gt;
+机器2：Ubuntu(单网卡)，账号密码：root/Solarsec521&lt;/p&gt;</description></item><item><title>Linux服务器挖矿病毒应急案例</title><link>https://lpppp.xyz/posts/linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8C%96%E7%9F%BF%E7%97%85%E6%AF%92%E5%BA%94%E6%80%A5%E6%A1%88%E4%BE%8B/</link><pubDate>Wed, 10 Jun 2026 10:08:29 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8C%96%E7%9F%BF%E7%97%85%E6%AF%92%E5%BA%94%E6%80%A5%E6%A1%88%E4%BE%8B/</guid><category domain="https://lpppp.xyz/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA/">应急响应靶机</category><description>&lt;h1 class="heading-element" id="linux服务器挖矿病毒应急案例"&gt;&lt;span&gt;Linux服务器挖矿病毒应急案例&lt;/span&gt;
+ &lt;a href="#linux%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%8c%96%e7%9f%bf%e7%97%85%e6%af%92%e5%ba%94%e6%80%a5%e6%a1%88%e4%be%8b" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://bdziyi.com/ulab/lab.html?page=target-detail&amp;amp;id=71" target="_blank" rel="external nofollow noopener noreferrer"&gt;Linux服务器挖矿病毒应急案例 - 无境·网安靶场&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;题目描述：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;靶机来源于wxiaoge应急响应培训，请使用ssh访问机器，账户：zyr 密码：wxiaoge123 flag在用户桌面目录中，请答题获取最终flag目标是彻底清理挖矿程序，你的任务是尽快使机器恢复正常，检查重启后是否不再被挖矿，不溯源&lt;/p&gt;</description></item><item><title>暗月：linux 服务器被黑应急响应</title><link>https://lpppp.xyz/posts/%E6%9A%97%E6%9C%88-linux-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A2%AB%E9%BB%91%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94/</link><pubDate>Fri, 29 May 2026 08:57:43 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/%E6%9A%97%E6%9C%88-linux-%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%A2%AB%E9%BB%91%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94/</guid><category domain="https://lpppp.xyz/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA/">应急响应靶机</category><description>&lt;h1 class="heading-element" id="暗月linux-服务器被黑应急响应"&gt;&lt;span&gt;暗月：linux 服务器被黑应急响应&lt;/span&gt;
+ &lt;a href="#%e6%9a%97%e6%9c%88linux-%e6%9c%8d%e5%8a%a1%e5%99%a8%e8%a2%ab%e9%bb%91%e5%ba%94%e6%80%a5%e5%93%8d%e5%ba%94" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://bdziyi.com/ulab/lab.html?page=target-detail&amp;amp;id=38" target="_blank" rel="external nofollow noopener noreferrer"&gt;暗月：linux 服务器被黑应急响应 - 无境·网安靶场&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;题目描述：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Linux 服务器被黑应急响应靶场考点&lt;/p&gt;</description></item><item><title>Windows应急响应研判</title><link>https://lpppp.xyz/posts/windows%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E7%A0%94%E5%88%A4/</link><pubDate>Thu, 28 May 2026 21:37:05 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/windows%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E7%A0%94%E5%88%A4/</guid><category domain="https://lpppp.xyz/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA/">应急响应靶机</category><description>&lt;h1 class="heading-element" id="windows应急响应研判"&gt;&lt;span&gt;Windows应急响应研判&lt;/span&gt;
+ &lt;a href="#windows%e5%ba%94%e6%80%a5%e5%93%8d%e5%ba%94%e7%a0%94%e5%88%a4" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://mp.weixin.qq.com/s/k7VwLpn3XGMjobhUAZF22A?scene=1" target="_blank" rel="external nofollow noopener noreferrer"&gt;https://mp.weixin.qq.com/s/k7VwLpn3XGMjobhUAZF22A?scene=1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;服务器场景操作系统 Windows&lt;br&gt;
+服务器账号密码 administrator P@ssw0rd&lt;br&gt;
+题目来源公众号 ©州弟学安全&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 class="heading-element" id="请找出攻击者攻击成功的端口如多个端口则从小到大xxx"&gt;&lt;span&gt;请找出攻击者攻击成功的端口，如多个端口，则从小到大{x,x,x,}&lt;/span&gt;
+ &lt;a href="#%e8%af%b7%e6%89%be%e5%87%ba%e6%94%bb%e5%87%bb%e8%80%85%e6%94%bb%e5%87%bb%e6%88%90%e5%8a%9f%e7%9a%84%e7%ab%af%e5%8f%a3%e5%a6%82%e5%a4%9a%e4%b8%aa%e7%ab%af%e5%8f%a3%e5%88%99%e4%bb%8e%e5%b0%8f%e5%88%b0%e5%a4%a7xxx" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;p&gt;思路：&lt;/p&gt;</description></item><item><title>应急响应之Windows日志分析</title><link>https://lpppp.xyz/posts/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E4%B9%8Bwindows%E6%97%A5%E5%BF%97%E5%88%86%E6%9E%90/</link><pubDate>Thu, 28 May 2026 20:42:51 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E4%B9%8Bwindows%E6%97%A5%E5%BF%97%E5%88%86%E6%9E%90/</guid><category domain="https://lpppp.xyz/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA/">应急响应靶机</category><description>&lt;h1 class="heading-element" id="应急响应之windows日志分析"&gt;&lt;span&gt;应急响应之Windows日志分析&lt;/span&gt;
+ &lt;a href="#%e5%ba%94%e6%80%a5%e5%93%8d%e5%ba%94%e4%b9%8bwindows%e6%97%a5%e5%bf%97%e5%88%86%e6%9e%90" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://mp.weixin.qq.com/s/eJpsOeaEczcPE-uipP7vCQ" target="_blank" rel="external nofollow noopener noreferrer"&gt;https://mp.weixin.qq.com/s/eJpsOeaEczcPE-uipP7vCQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://xj.edisec.net/challenges/89" target="_blank" rel="external nofollow noopener noreferrer"&gt;第四章-windows日志分析 - 玄机&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;‍&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+系统: Windows 7
+CPU: 2颗
+内存: 2G
+空间: 保证不低于5G
+其它傀儡机: 段内
+账号/密码: winlog/winlog123
+
+注意: 远控软件内IP为虚拟IP，如在进行进程中没有找到相关外连，应该是由于连接超时造成的断开了，重启环境服务器或软件即可继续对外发起请求，请见谅
+注意: 按照题目提示可以根据系统功能分析，或桌面工具进行辅助分析
+注意: winlog用户在操作关于系统权限功能时，一定要使用管理员权限打开工具再去执行
+如: cmd直接打开则可能无法进行操作系统权限性操作，需右击cmd-使用管理员权限打开，才可以，其它工具也如此
+注意: 题目中shell如需在本地分析，提前关闭杀毒软件，会被杀掉，非免杀
+
+题目: 
+ 1. 审计桌面的logs日志，定位所有扫描IP，并提交扫描次数
+ 2. 审计相关日志，提交rdp被爆破失败次数
+ 3. 审计相关日志，提交成功登录rdp的远程IP地址，多个以&amp;amp;连接,以从小到大顺序排序提交
+ 4. 提交黑客创建的隐藏账号
+ 5. 提交黑客创建的影子账号
+ 6. 黑客植入了一个远程shell，审计相关进程和自启动项提交该程序名字
+ 7. 提交远程shell程序的连接IP&amp;#43;端口，以IP:port方式提交
+ 8. 黑客使用了计划任务来定时执行某shell程序，提交此程序名字&lt;/code&gt;&lt;/pre&gt;&lt;h2 class="heading-element" id="审计桌面的logs日志定位所有扫描ip并提交扫描次数"&gt;&lt;span&gt;审计桌面的logs日志，定位所有扫描IP，并提交扫描次数&lt;/span&gt;
+ &lt;a href="#%e5%ae%a1%e8%ae%a1%e6%a1%8c%e9%9d%a2%e7%9a%84logs%e6%97%a5%e5%bf%97%e5%ae%9a%e4%bd%8d%e6%89%80%e6%9c%89%e6%89%ab%e6%8f%8fip%e5%b9%b6%e6%8f%90%e4%ba%a4%e6%89%ab%e6%8f%8f%e6%ac%a1%e6%95%b0" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;p&gt;思路：&lt;/p&gt;</description></item><item><title>应急响应靶机训练-近源渗透OS-1</title><link>https://lpppp.xyz/posts/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA%E8%AE%AD%E7%BB%83-%E8%BF%91%E6%BA%90%E6%B8%97%E9%80%8Fos-1/</link><pubDate>Thu, 28 May 2026 12:48:04 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA%E8%AE%AD%E7%BB%83-%E8%BF%91%E6%BA%90%E6%B8%97%E9%80%8Fos-1/</guid><category domain="https://lpppp.xyz/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA/">应急响应靶机</category><description>&lt;h1 class="heading-element" id="应急响应靶机训练-近源渗透os-1"&gt;&lt;span&gt;应急响应靶机训练-近源渗透OS-1&lt;/span&gt;
+ &lt;a href="#%e5%ba%94%e6%80%a5%e5%93%8d%e5%ba%94%e9%9d%b6%e6%9c%ba%e8%ae%ad%e7%bb%83-%e8%bf%91%e6%ba%90%e6%b8%97%e9%80%8fos-1" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;p&gt;题目描述：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;前景需要：小王从某安全大厂被优化掉后，来到了某私立小学当起了计算机老师。某一天上课的时候，发现鼠标在自己动弹，又发现除了某台电脑，其他电脑连不上网络。感觉肯定有学生捣乱，于是开启了应急。&lt;/p&gt;</description></item><item><title>应急响应靶机训练--Web3</title><link>https://lpppp.xyz/posts/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA%E8%AE%AD%E7%BB%83-web3/</link><pubDate>Wed, 27 May 2026 19:49:44 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA%E8%AE%AD%E7%BB%83-web3/</guid><category domain="https://lpppp.xyz/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA/">应急响应靶机</category><description>&lt;h1 class="heading-element" id="应急响应靶机训练web3"&gt;&lt;span&gt;应急响应靶机训练&amp;ndash;Web3&lt;/span&gt;
+ &lt;a href="#%e5%ba%94%e6%80%a5%e5%93%8d%e5%ba%94%e9%9d%b6%e6%9c%ba%e8%ae%ad%e7%bb%83web3" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;h2 class="heading-element" id="挑战内容"&gt;&lt;span&gt;挑战内容&lt;/span&gt;
+ &lt;a href="#%e6%8c%91%e6%88%98%e5%86%85%e5%ae%b9" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;&lt;p&gt;前景需要：小苕在省护值守中，在灵机一动情况下把设备停掉了，甲方问：为什么要停设备？小苕说：我第六感告诉我，这机器可能被黑了。&lt;/p&gt;</description></item><item><title>应急响应靶机--Web2</title><link>https://lpppp.xyz/posts/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA-web2/</link><pubDate>Wed, 27 May 2026 12:32:34 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA-web2/</guid><category domain="https://lpppp.xyz/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA/">应急响应靶机</category><description>&lt;h1 class="heading-element" id="应急响应靶机web2"&gt;&lt;span&gt;应急响应靶机&amp;ndash;Web2&lt;/span&gt;
+ &lt;a href="#%e5%ba%94%e6%80%a5%e5%93%8d%e5%ba%94%e9%9d%b6%e6%9c%baweb2" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;p&gt;题目描述：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;前景需要：小李在某单位驻场值守，深夜12点，甲方已经回家了，小李刚偷偷摸鱼后，发现安全设备有告警，于是立刻停掉了机器开始排查。&lt;/p&gt;</description></item><item><title>应急响应靶机训练--Web1</title><link>https://lpppp.xyz/posts/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA%E8%AE%AD%E7%BB%83-web1/</link><pubDate>Wed, 27 May 2026 10:48:43 +0800</pubDate><author>1171498928@qq.com (lpppp)</author><guid>https://lpppp.xyz/posts/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA%E8%AE%AD%E7%BB%83-web1/</guid><category domain="https://lpppp.xyz/categories/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA/">应急响应靶机</category><description>&lt;h1 class="heading-element" id="应急响应靶机训练web1"&gt;&lt;span&gt;应急响应靶机训练&amp;ndash;Web1&lt;/span&gt;
+ &lt;a href="#%e5%ba%94%e6%80%a5%e5%93%8d%e5%ba%94%e9%9d%b6%e6%9c%ba%e8%ae%ad%e7%bb%83web1" class="heading-mark"&gt;
+ &lt;svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"&gt;&lt;path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"&gt;&lt;/path&gt;&lt;/svg&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;&lt;p&gt;打开虚拟机报错&lt;/p&gt;
+&lt;p&gt;&lt;img loading="lazy" src='https://lpppp.xyz/posts/%E5%BA%94%E6%80%A5%E5%93%8D%E5%BA%94%E9%9D%B6%E6%9C%BA%E8%AE%AD%E7%BB%83-web1/images/PixPin_2026-05-27_11-17-59-20260527111803-2y322p5.png' alt="PixPin_2026-05-27_11-17-59" height="239" width="628"&gt;&lt;/p&gt;
+&lt;p&gt;应该是 VMware 版本的问题，直接改 &lt;code&gt;Windows Server 2022.vmx&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;找到：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;virtualHW.version = &amp;#34;21&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;改成：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;virtualHW.version = &amp;#34;20&amp;#34;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;然后就能正常启动了。&lt;/p&gt;</description></item></channel></rss>
